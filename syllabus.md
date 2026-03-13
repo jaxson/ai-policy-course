@@ -77,11 +77,11 @@ How did we get here? What is the history behind AI? Overview of course expectati
 *Discussion: Where is the world going with AI, and what is Canada's role in it?*
 
 **Recommended Material:**
-- GenAI for Everyone
-- CIFAR Destination AI Free Course
-- Coursera — History of AI, High Level Overview
-- Canadian AI Strategy for Public Service
-- Pan-Canadian AI Strategy
+- [GenAI for Everyone](https://www.deeplearning.ai/courses/generative-ai-for-everyone/)
+- [CIFAR Destination AI Free Course](https://cifar.ca/ai/destinationai/)
+- [Coursera — History of AI, High Level Overview](https://www.coursera.org/articles/history-of-ai)
+- [Canadian AI Strategy for Public Service](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/gc-ai-strategy-overview.html)
+- [Pan-Canadian AI Strategy](https://ised-isde.canada.ca/site/ai-strategy/en)
 
 ---
 
@@ -91,9 +91,9 @@ How did we get here? What is the history behind AI? Overview of course expectati
 Deep learning, LLMs, training vs. inference. Lifecycle of an AI system: development → deployment → monitoring. Failure modes & governance entry points.
 
 **Recommended Material:**
-- Large Language Models explained
-- Attention Is All You Need
-- Cohere hits $6.8B valuation
+- [Large Language Models explained](https://www.understandingai.org/p/large-language-models-explained-with)
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+- [Cohere hits $6.8B valuation](https://techcrunch.com/2025/08/14/cohere-hits-a-6-8b-valuation-as-investors-amd-nvidia-and-salesforce-double-down/)
 
 ---
 
@@ -105,9 +105,9 @@ Geopolitics of compute. Data quality & public-sector governance roles. Cloud inf
 *Case Study: Canada vs. U.S. vs. EU compute strategies.*
 
 **Recommended Material:**
-- Computing power and governance
-- America's semiconductor policy (2024)
-- Should we worry about AI's circular deals?
+- [Computing power and governance](https://www.governance.ai/analysis/computing-power-and-the-governance-of-ai)
+- [America's semiconductor policy (2024)](https://www.noahpinion.blog/p/americas-semiconductor-policy-is)
+- [Should we worry about AI's circular deals?](https://www.noahpinion.blog/p/should-we-worry-about-ais-circular)
 
 ---
 
@@ -117,10 +117,10 @@ Geopolitics of compute. Data quality & public-sector governance roles. Cloud inf
 Large-scale transformation with digital tools and AI agents. Organizational change and implementation examples.
 
 **Recommended Material:**
-- *God and Golem* (required — est. 90 min reading time)
-- AI at RBC
-- TED — What Henry Ford Can Teach Us About AI
-- Behind the Growth — Kathryn Hume
+- [*God and Golem*](https://monoskop.org/images/1/1f/Wiener_Norbert_God_and_Golem_A_Comment_on_Certain_Points_where_Cybernetics_Impinges_on_Religion.pdf) (required — est. 90 min reading time)
+- [AI at RBC](https://www.rbc.com/our-impact/technology/artificial-intelligence.html)
+- [TED — What Henry Ford Can Teach Us About AI](https://www.ted.com/talks/kathryn_hume_what_henry_ford_can_teach_us_about_ai)
+- [Behind the Growth — Kathryn Hume](https://www.mobilelive.ai/podcast/balancing-people-processes-and-artificial-intelligence)
 
 ---
 
@@ -132,9 +132,9 @@ Bias, fairness, explainability, accountability. Public-sector use cases: immigra
 *Workshop: Auditing an AI-assisted system and/or AI agents. Students conduct structured critique using a Canadian policy lens.*
 
 **Recommended Material:**
-- Shingai Manjengwa on AI Agents
-- Responsible use of AI in government
-- Guide on the use of GenAI in government
+- [Shingai Manjengwa on AI Agents](https://www.superdatascience.com/podcast/sds-809-agentic-ai-with-shingai-manjengwa)
+- [Responsible use of AI in government](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai.html)
+- [Guide on the use of GenAI in government](https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/guide-use-generative-ai.html)
 
 ---
 
@@ -147,9 +147,9 @@ AI safety in technical & policy contexts. Red-team exercises, evaluation framewo
 *In-class simulation: Small-group red-team exercise.*
 
 **Recommended Material:**
-- Anthropic CEO warns that without guardrails, AI could be on dangerous path
-- Constitutional AI
-- 60 Minutes Interview with Geoffrey Hinton
+- [Anthropic CEO warns that without guardrails, AI could be on dangerous path](https://www.youtube.com/watch?v=aAPpQC-3EyE)
+- [Constitutional AI](https://ar5iv.labs.arxiv.org/html/2212.08073)
+- [60 Minutes Interview with Geoffrey Hinton](https://www.youtube.com/watch?v=qrvK_KuIeJk)
 
 ---
 
@@ -169,10 +169,10 @@ AI-enabled cyber threats. Information integrity, misinformation, coordinated man
 *Case Study: Global security responses.*
 
 **Recommended Material:**
-- Canada's defence procurement
-- EU — AI and Defence
-- US Foreign Policy — Power in the Age of AI
-- The American Way of AI
+- [Canada's defence procurement](https://policyoptions.irpp.org/2025/09/defence-procurement/)
+- [EU — AI and Defence](https://www.europarl.europa.eu/RegData/etudes/BRIE/2025/769580/EPRS_BRI(2025)769580_EN.pdf)
+- [US Foreign Policy — Power in the Age of AI](https://www.institutmontaigne.org/en/expressions/us-foreign-policy-power-age-ai)
+- [The American Way of AI](https://www.foreignaffairs.com/podcasts/limits-american-way-artificial-intelligence)
 
 ---
 
@@ -184,8 +184,8 @@ Training data & copyright. Ownership of AI outputs and intellectual property. Ca
 *Hands-on workshop: Policy memo drafting with GenAI / Prompt Engineering Workshop.*
 
 **Recommended Material:**
-- Canadian Generative AI Consultation What We Heard Report
-- European Commission Launches Consultations on the EU AI Act's Copyright Provisions and AI Regulatory Sandboxes
+- [Canadian Generative AI Consultation What We Heard Report](https://ised-isde.canada.ca/site/strategic-policy-sector/en/marketplace-framework-policy/consultation-copyright-age-generative-artificial-intelligence-what-we-heard-report)
+- [European Commission Launches Consultations on the EU AI Act's Copyright Provisions and AI Regulatory Sandboxes](https://www.insideprivacy.com/artificial-intelligence/european-commission-launches-consultations-on-the-eu-ai-acts-copyright-provisions-and-ai-regulatory-sandboxes/)
 
 ---
 
@@ -195,11 +195,11 @@ Training data & copyright. Ownership of AI outputs and intellectual property. Ca
 EU AI Act, U.S. Executive Orders, OECD, UK frameworks. What realistic "global harmonization" could look like.
 
 **Recommended Material:**
-- EU AI Code of Practice
-- LawAI — Automated compliance and the regulation of AI
-- LawAI — The governance misspecification problem
-- LawAI — Law-following AI
-- American AI Action Plan
+- [EU AI Code of Practice](https://artificialintelligenceact.eu/code-of-practice-overview/)
+- [LawAI — Automated compliance and the regulation of AI](https://law-ai.org/automated-compliance-and-the-regulation-of-ai/)
+- [LawAI — The governance misspecification problem](https://law-ai.org/the-governance-misspecification-problem/)
+- [LawAI — Law-following AI](https://law-ai.org/law-following-ai/)
+- [American AI Action Plan](https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf)
 
 ---
 
@@ -209,9 +209,9 @@ EU AI Act, U.S. Executive Orders, OECD, UK frameworks. What realistic "global ha
 How to build an alternative AI ecosystem that aligns with human values.
 
 **Recommended Material:**
-- Taking Open Source Into the AI Era
-- What is Public AI?
-- Bringing Tech Back to the People
+- [Taking Open Source Into the AI Era](https://sloanreview.mit.edu/article/taking-open-source-into-the-ai-era/)
+- [What is Public AI?](https://www.mozillafoundation.org/en/research/library/public-ai/)
+- [Bringing Tech Back to the People](https://dataconomy.com/2024/10/09/public-ai-mozilla-tells-how-we-should-regulate-ai/)
 
 ---
 
@@ -221,8 +221,8 @@ How to build an alternative AI ecosystem that aligns with human values.
 What is happening with the latest models from frontier researchers?
 
 **Recommended Material:**
-- AI in 2025: gestalt
-- AI 2027
+- [AI in 2025: gestalt](https://www.gleech.org/ai2025)
+- [AI 2027](https://ai-2027.com/)
 
 ---
 
@@ -234,9 +234,9 @@ Course synthesis: where Canada goes next. Roles in shaping the decade ahead.
 *In-class group work: Drafting a national AI strategy and governance framework.*
 
 **Recommended Material:**
-- Artificial intelligence in public services: When and why citizens accept its usage
-- OECD Governing with AI
-- AI And Public Service
+- [Artificial intelligence in public services: When and why citizens accept its usage](https://www.sciencedirect.com/science/article/pii/S0740624X22000375)
+- [OECD Governing with AI](https://www.oecd.org/en/publications/governing-with-artificial-intelligence_795de142-en/full-report/ai-in-public-service-design-and-delivery_09704c1a.html)
+- [AI And Public Service](https://apolitical.co/solution-articles/en/ai-and-public-service-evolving-together-165)
 
 ---
 
@@ -255,13 +255,13 @@ Copies should be available at the UofT Library and/or the UofT Bookstore.
 
 > **If you only read one of the books cover to cover, read *Co-Intelligence*.**
 
-| Book | UofT Library | Amazon |
-|------|:---:|:---:|
-| *Co-Intelligence* (Ethan Mollick, 2024) | [Library](https://librarysearch.library.utoronto.ca/) | [Amazon.ca](https://www.amazon.ca/) |
-| *The Alignment Problem* (Brian Christian, 2020) | [Library](https://librarysearch.library.utoronto.ca/) | [Amazon.ca](https://www.amazon.ca/) |
-| *Empire of AI* (Karen Hao, 2025) | [Library](https://librarysearch.library.utoronto.ca/) | [Amazon.ca](https://www.amazon.ca/) |
-| *Power and Prediction* (Agrawal, Gans, Goldfarb, 2022) | [Library](https://librarysearch.library.utoronto.ca/) | [Amazon.ca](https://www.amazon.ca/) |
-| *The Worlds I See* (Fei-Fei Li, 2023) | [Library](https://librarysearch.library.utoronto.ca/) | [Amazon.ca](https://www.amazon.ca/) |
+| Book | Summaries | UofT Library | Amazon |
+|------|-----------|:---:|:---:|
+| *Co-Intelligence* (Ethan Mollick, 2024) | [Shortform](https://www.shortform.com/summary/co-intelligence-summary-ethan-mollick) / [Blinkist](https://www.blinkist.com/en/books/co-intelligence-en) | [UofT Library](https://librarysearch.library.utoronto.ca/nde/search?query=co-intelligence&tab=Everything&search_scope=UTL_AND_CI&searchInFulltext=false&vid=01UTORONTO_INST:UTORONTO_NDE&lang=en) | [Amazon.ca](https://www.amazon.ca/Co-Intelligence-Living-Working-Ethan-Mollick/dp/059371671X) |
+| *The Alignment Problem* (Brian Christian, 2020) | [Shortform](https://www.shortform.com/summary/the-alignment-problem-summary-brian-christian) / [Blinkist](https://www.blinkist.com/en/books/the-alignment-problem-en) | [UofT Library](https://librarysearch.library.utoronto.ca/nde/search?query=the%20alignment%20problem&tab=Everything&search_scope=UTL_AND_CI&searchInFulltext=false&vid=01UTORONTO_INST:UTORONTO_NDE&lang=en) | [Amazon.ca](https://www.amazon.ca/Alignment-Problem-Machine-Learning-Values/dp/0393868338) |
+| *Empire of AI* (Karen Hao, 2025) | [Blinkist](https://www.blinkist.com/en/books/empire-of-ai-en) | [UofT Library](https://librarysearch.library.utoronto.ca/nde/search?query=empire%20of%20ai&tab=Everything&search_scope=UTL_AND_CI&searchInFulltext=false&vid=01UTORONTO_INST:UTORONTO_NDE&lang=en) | [Amazon.ca](https://www.amazon.ca/Empire-AI-Dreams-Nightmares-Altmans/dp/0593657500) |
+| *Power and Prediction* (Agrawal, Gans, Goldfarb, 2022) | [Shortform](https://www.shortform.com/summary/power-and-prediction-summary-ajay-agrawal-joshua-gans-and-avi-goldfarb) / [Blinkist](https://www.blinkist.com/en/books/power-and-prediction-en) | [UofT Library](https://librarysearch.library.utoronto.ca/nde/search?query=power%20and%20prediction&tab=Everything&search_scope=UTL_AND_CI&searchInFulltext=false&vid=01UTORONTO_INST:UTORONTO_NDE&lang=en) | [Amazon.ca](https://www.amazon.ca/Power-Prediction-Disruptive-Artificial-Intelligence/dp/1647824192) |
+| *The Worlds I See* (Fei-Fei Li, 2023) | [Shortform](https://www.shortform.com/summary/the-worlds-i-see-summary-fei-fei-li) | [UofT Library](https://librarysearch.library.utoronto.ca/nde/search?query=the%20worlds%20i%20see&tab=Everything&search_scope=UTL_AND_CI&searchInFulltext=false&vid=01UTORONTO_INST:UTORONTO_NDE&lang=en) | [Amazon.ca](https://www.amazon.ca/Worlds-See-Curiosity-Exploration-Discovery/dp/1250897939) |
 
 ---
 
@@ -389,15 +389,15 @@ Information about registering with Accessibility Services is available on the [w
 
 *If you have non-medical issues preventing you from completing work, feel free to email me or contact the Accessibility Services Offices below.*
 
-Students who miss academic work because of an illness may be required to submit a Verification of Illness or Injury (VOI) Form. A copy of the form must be sent to the instructor and the MPP Program Coordinator (p.jory@utoronto.ca).
+Students who miss academic work because of an illness may be required to submit a [Verification of Illness or Injury (VOI) Form](https://registrar.utoronto.ca/policies-and-guidelines/verification-of-illness-or-injury/). A copy of the form must be sent to the instructor and the MPP Program Coordinator (p.jory@utoronto.ca).
 
-Students seeking academic consideration due to chronic (ongoing) health issues, or a disability should contact the [Accessibility Services Office](https://studentlife.utoronto.ca/department/accessibility-services/). Religious observances will be accommodated according to the Policy on Scheduling of Classes and Examinations and Other Accommodations for Religious Observances. Support can be provided by the divisional registrar's office if students are unsure of what resources are available.
+Students seeking academic consideration due to chronic (ongoing) health issues, or a disability should contact the [Accessibility Services Office](https://studentlife.utoronto.ca/department/accessibility-services/). Religious observances will be accommodated according to the [Policy on Scheduling of Classes and Examinations and Other Accommodations for Religious Observances](https://www.viceprovoststudents.utoronto.ca/policies-guidelines/accommodation-religious/). Support can be provided by the divisional registrar's office if students are unsure of what resources are available.
 
 > **Note:** Students are expected to request accommodations in advance of assignments or tests. Failure to do so may result in a late penalty being applied.
 
 ### Mental Health and Wellness
 
-The University of Toronto's Student Mental Health Resource Guide is an online tool where students can access various on-campus and off-campus mental health resources. The School of Graduate Studies has a dedicated counsellor for graduate students. Appointments may be booked by contacting the Health and Wellness Centre at 416-978-8030 or info.hwc@utoronto.ca and asking to be connected with the dedicated graduate student counsellor.
+The University of Toronto's [Student Mental Health Resource Guide](https://mentalhealth.utoronto.ca/) is an online tool where students can access various on-campus and off-campus mental health resources. The School of Graduate Studies has a dedicated counsellor for graduate students. Appointments may be booked by contacting the Health and Wellness Centre at 416-978-8030 or info.hwc@utoronto.ca and asking to be connected with the dedicated graduate student counsellor.
 
 **Other Mental Health Resources — Feeling distressed? Are you in a crisis? There's help.**
 
@@ -406,14 +406,16 @@ The University of Toronto's Student Mental Health Resource Guide is an online to
   - Text: GOOD2TALK to 686868
   - Free, confidential helpline with professional counselling, information, and referrals for mental health, addictions, and well-being. Available 24/7/365.
 
-- **My Student Support Program (MySSP)**
+- **My Student Support Program (MySSP)** — [Learn more](https://studentlife.utoronto.ca/service/myssp/)
   - Call (North America): 1-844-451-9700
   - Call (Outside North America): 001-416-380-6575
 
-- **U of T Employee & Family Assistance Program (EFAP)**
+- **U of T Employee & Family Assistance Program (EFAP)** — [Learn more](https://hrandequity.utoronto.ca/employees/efap/)
   - Toll-free: 1-800-663-1142
   - TTY: 1-866-398-9505
   - Collect: 604-689-1717
+
+For more resources, see: [Feeling Distressed? (PDF guide)](https://studentlife.utoronto.ca/wp-content/uploads/feeling-distressed-2019.pdf)
 
 **Are you in immediate danger?**
 
@@ -434,7 +436,7 @@ Please read the University's [Code of Behaviour on Academic Matters](https://gov
 
 Case write-ups, papers, assignments and all other deliverables must be original work, giving credit to the work of others where appropriate. This applies to individual and group deliverables. All members of a group are accountable for the academic integrity of their submissions.
 
-You are encouraged to consult the [University of Toronto Academic Integrity](https://www.academicintegrity.utoronto.ca/) and the [UofT Writing Centre Resources](https://writing.utoronto.ca/) websites for further detail and help on the proper use of citations.
+You are encouraged to consult the [University of Toronto Academic Integrity](https://www.academicintegrity.utoronto.ca/) and the [UofT Writing Centre Resources](https://writing.utoronto.ca/writing-centres/graduate-students/) websites for further detail and help on the proper use of citations.
 
 ### Group Work and Behaviour
 
@@ -443,7 +445,7 @@ You are expected to treat teamwork the same way as you would in any professional
 - Contributing substantially and proportionally to each project
 - Committing to a standard of work and level of participation agreed upon by the group
 - Ensuring familiarity with the entire content of a group deliverable so that you can sign off on it with your name in its entirety as original work
-- Accepting and acknowledging that assignments that are found to be plagiarized in any way will be subject to sanctions for all group members under the University's Code of Behaviour on Academic Matters
+- Accepting and acknowledging that assignments that are found to be plagiarized in any way will be subject to sanctions for all group members under the University's [Code of Behaviour on Academic Matters](https://governingcouncil.utoronto.ca/secretariat/policies/code-behaviour-academic-matters-july-1-2019)
 - Ensuring that all team members voice their opinions, thoughts, and concerns openly and in an inclusive and considerate environment
 - Taking personal responsibility for voicing your own thoughts to enhance and contribute to team learning
 
@@ -453,7 +455,7 @@ If you encounter difficulties with any group member that cannot be resolved with
 
 Like any professional organization, the Munk School expects all of its members to behave responsibly and with courtesy and respect for others when using technology. The Munk School is committed to equity, human rights, and respect for diversity. All members of the learning environment in this course should strive to create an atmosphere of mutual respect where all members of our community can express themselves, engage with each other, and respect one another's differences.
 
-Please read the University's [Student Code of Conduct](https://governingcouncil.utoronto.ca/secretariat/policies/code-student-conduct-december-13-2019) and policy on the [Appropriate Use of Information and Communication Technology](https://governingcouncil.utoronto.ca/secretariat/policies/appropriate-use-information-and-communication-technology-january-1-2019).
+Please read the University's [Student Code of Conduct](https://governingcouncil.utoronto.ca/secretariat/policies/code-student-conduct-december-13-2019) and policy on the [Appropriate Use of Information and Communication Technology](https://www.provost.utoronto.ca/planning-policy/information-communication-technology-appropriate-use/).
 
 ### Generative AI Policy
 

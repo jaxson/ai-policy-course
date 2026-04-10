@@ -1,0 +1,593 @@
+
+Applications 1.1: https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/11-applications
+
+
+General Standards
+* Everyone has a right to apply and everyone who applies has a right to an advocate (friend or family member) to attend their application interview
+* If an applicant has special needs (deaf, non french or english speaker) and is not able to make appropriate arrangements, the ministry must provide accommodations
+
+
+ODSP Self-Referrals
+* Applications must be taken within 15 business days of receiving
+* ODSP staff are responsible for processing an application and verifying information from an applicant to make eligibility decisions. If a responsible person submits an application on another's behalf, the applicant must be seen by ODSP staff
+
+
+Determining Financial Eligibility
+* Applicants applying through Ontario Works must first meet financial eligibility for Ontario Works. Once eligibility is established the Disability Adjudication Unit (DAU) and a Disability Determination Package (DDP) is provided to the applicant. 
+   * The DAU is responsible for assessing whether the applicant is a person with a disability, if they are the ODSP office grants income support, if not the applicant and ODSP office are informed of rejection. 
+* Self-referrals at an ODSP office require the following forms: 
+   * Application for Assistance Part 1
+   * Consent to Disclose and Verify Personal Information - General
+   * Consent to Disclose and Verify Information - Canada Revenue Agency (CRA)
+   * Rights and Responsibilities (a signed copy is retained on the electronic file, and a copy provided to the applicant or person applying on their behalf (e.g. trustee or Power of Attorney)
+* Applications taken through the Social Assistance Digital Application (SADA) require: 
+   * Declaration
+   * Consent to Disclose and Verify Personal Information - General
+   * Consent to Disclose and Verify Information - Canada Revenue Agency (CRA)
+
+
+Once Financial Eligibility has been Established
+* A referral to the DAU is made and a DDP is provided to the applicant 
+   * If the DAU determines the applicant has a disability income support is granted within 15 business days
+* Two third-party checks are required to verify eligibility: 
+   * Canada Revenue Agency (CRA): Verifies income and other eligibility-related details
+   * Equifax Canada: Verifies personal and financial information
+* For OSDP self-referrals only, verification requirements include: 
+   * Social insurance number
+   * Health number
+   * Proof of all members identity and date of birth
+   * Verification of income
+   * Verification of assets
+   * Verification of shelter costs
+   * Verification of Ontario residency
+   * Participation agreement for non-disabled spouse and dependent adult
+
+
+Disability Adjudication Process 1.2 https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/12-disability
+
+
+* The DDP includes these forms: 
+   * Health Status Report (HSR) which can be filled out by: 
+      * Physician
+      * Psychologist or Psychological Associate
+      * Ophthalmologist or Optometrist
+      * Registered Nurse in the Extended Class or Registered Nurse
+   * Activities of Daily Living Index (ADLI) which can be filled out by 
+      * Physician
+      * Psychologist or Psychological Associate
+      * Ophthalmologist or Optometrist
+      * Registered Nurse in the Extended Class or Registered Nurse
+      * Occupational Therapist or Physiotherapist
+      * Audiologist or Speech Language Pathologist
+      * Chiropractor
+      * Social Worker
+   * Self Report Form
+   * Consent to the Release Medical Information
+   * Instruction Sheet
+
+
+Who is Eligible: Dependent Adults 2.1 https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/21-who-eligible
+
+
+* A person is a dependent adult if: 
+   * is 18 years of age or older
+   * resides with his/her parent(s) who is an ODSP applicant/recipient or the applicant/recipient’s spouse
+   * has not established financial independence
+   * has not been determined to be eligible as a person with a disability or a member of a prescribed class in his/her own right
+* A person is an independent adult if they meet any of the following criteria
+   * he/she resides with a spouse or has resided with a spouse at any time in the past
+   * he/she was eligible as a “sole-support student” under the Ontario Student Assistance Program (OSAP) at any time in the past
+   * there have been one or more periods with a cumulative total of 24 months in which one, or any combination of the following has occurred
+      * he/she has had net monthly income, other than child support, that exceeded the maximum monthly rate for a single person under Ontario Works
+      * his/her basic needs and shelter have been provided by a source other than his/her parents or an institution
+      * he/she has received social assistance separate from his/her parents
+      * he/she has lived away from the parental home after his/her 18th birthday
+   * a period of five years has passed since the person ceased to attend school or receive home instruction
+   * he/she has received a degree from a university or other degree granting institution, or a diploma from a college of applied arts and technology
+   * he/she is a parent who has, or has had lawful custody of his/her child
+
+
+* Determining program eligibility of a dependent adult is based on the following chart: 
+Chart 1: Adult Child Living with Parents — ODSP Eligibility Decision Tree
+Parents on ODSP?
+	Financial Status of Adult Child
+	Disability Status
+	Program Eligibility
+	Elected Dependent Adult?
+	Implications
+	Yes
+	Financially independent
+	Not a person with a disability
+	May qualify for Ontario Works in own right
+	No
+	• Excluded from benefit unit • No boarder/roomer charge if receiving OW
+	Yes
+	Not financially independent
+	Not a person with a disability
+	Included in ODSP benefit unit, subject to OW participation requirements
+	N/A
+	• Included in benefit unit • Boarder/roomer charge not applicable
+	Yes
+	Financially independent in a given month (e.g. chargeable earnings exceed OW rate for single)
+	Not a person with a disability
+	None
+	No
+	• Temporarily excluded from benefit unit • Boarder/roomer charge applied against parent(s) ODSP income support
+	Yes
+	N/A
+	Person with a disability
+	Qualifies for ODSP in own right
+	N/A
+	• Own ODSP income support (amount depends on shelter and other income) • No boarder/roomer charge against parent(s)
+	Yes
+	Not financially independent; chargeable earnings below OW rate for single
+	Not a person with a disability
+	Included in ODSP benefit unit, subject to OW participation requirements
+	N/A
+	• Chargeable income (after exemptions/deductions) applied against benefit unit • Boarder/roomer charge not applicable
+	Yes
+	Financially independent
+	Not a person with a disability
+	May qualify for Ontario Works in own right
+	Yes
+	• Included in ODSP benefit unit • Income and assets of adult child used to determine income support amount
+	* Examples of Case Scenarios for eligibility: 
+Chart 2: Case Scenarios — Adult Child Living with Parents on ODSP
+________________
+
+
+Scenario 1
+* 18 year old, living in parental home, not attending school, working on and off, not financially independent
+* Eligibility: Included in ODSP benefit unit in months where net income is below OW single rate; in months where income results in financial independence, may elect to remain as dependent adult; chargeable income (after exemptions/deductions) applied against benefit unit; required to meet OW participation requirements
+________________
+
+
+Scenario 2
+* 18 year old on ODSP, living in parental home, not financially independent
+* Eligibility: ODSP amount based on living arrangements and other income for parents' entire benefit unit including adult child
+________________
+
+
+Scenario 3
+* 20 year old sole support mother, separated, living in parental home, financially independent, in financial need
+* Eligibility: May be eligible for OW in own right; financial independence established via previous spousal relationship and custody of child; may elect to be treated as dependent adult — if so, ODSP amount based on full benefit unit; may apply for financial assistance for dependents through OW; no boarder/roomer charge if in receipt of OW
+________________
+
+
+Scenario 4
+* 20 year old, moved back home after 6 months living independently, financially independent in a given month
+* Eligibility: May elect to be excluded from ODSP benefit unit when financially independent; boarder/roomer charge applied against parent's income support when excluded and not eligible for OW; accumulating credit toward permanent financial independence
+________________
+
+
+Scenario 5
+* 19 year old living with common law spouse, in parental home, not working or attending school, financially independent
+* Eligibility: May be eligible for OW as a couple; may elect to be treated as dependent adult — ODSP amount based on full benefit unit; OW participation requirements apply; no boarder/roomer charge if receiving OW; boarder/roomer charge applies if not in benefit unit or receiving OW
+________________
+
+
+Scenario 6
+* 30 year old single, living in parental home, worked one year, pending EI, not financially independent
+* Eligibility: Included in parent's ODSP benefit unit; EI deducted dollar for dollar if under OW single rate; required to meet OW participation requirements; if EI exceeds OW single rate — may elect financial independence (removed from unit, boarder/roomer charge applies) or remain as dependent adult (EI deducted from parent's income support); accumulating credit toward permanent financial independence if EI exceeds OW rate
+________________
+
+
+Scenario 7
+* 21 year old single, living in parental home, earning $200/month (not financially independent) → salary increases to $1,000/month (financially independent) → salary decreases back to $200/month
+* Eligibility:
+   * At $200/month: included in benefit unit; chargeable net earnings applied against ODSP; required to meet OW participation requirements
+   * At $1,000/month: financially independent in a given month (clock starts); may elect to remain as dependent adult (income used to determine parent's ODSP) or elect financial independence (removed from unit, boarder/roomer charge applies)
+   * Back at $200/month: re-added to benefit unit; clock toward financial independence stops; OW participation requirements apply; no boarder/roomer charge; earnings exempt
+Spouse 2.3 https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/23-spouse
+Definition of a spouse: 
+* the person and the applicant/recipient have together declared to the Director that they are spouses
+* he/she is required under a court order or domestic contract to support the applicant/recipient or any of the applicant's/recipient's dependants
+* he/she has an obligation under the Family Law Act to support the applicant/recipient or the applicant's/recipient's dependants
+* the person and the applicant/recipient have been living in the same dwelling place for a period of at least three months
+* the social and familial aspects of the relationship between the two persons are consistent with cohabitation
+* the financial support provided by one person to the other or the degree of financial interdependence is consistent with cohabitation
+
+
+Spousal Eligibility: 
+* You can only be eligible to receive income support as a single person or sole-support parent if you do not reside with a spouse
+* If you do reside with a spouse you may apply for income support as a couple
+
+
+Reviewing Eligibility 3.1 https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/31-reviewing 
+Suspension of Income Support Conditions when required information and documentation remain outstanding without reason:
+* Information and/or documentation requested is essential for determining eligibility and accuracy of entitlement
+* The recipient has been given notice of what information or documentation is outstanding 
+* The information or documentation within the ability of the recipient to obtain
+Scenarios of suspension: 
+Scenarios: Suspension/Cancellation of Income Support — Three-Condition Test
+Scenario 1 — Rent Increase Verification (Maximum Shelter Already Being Received)
+A recipient notifies their caseworker that rent has increased and is asked to provide verification. The recipient is already receiving the maximum shelter allowance under ODSP, which was previously verified in SAMS.
+Condition
+	Met?
+	Rationale
+	Essential for eligibility/entitlement?
+	No
+	Recipient is already at maximum shelter — no increase would result. Information is not essential.
+	Notice provided?
+	N/A
+	Not appropriate to request information that would have no impact on entitlement.
+	Within recipient's ability to obtain?
+	N/A
+	Moot — Condition 1 not met.
+	Outcome: Condition 1 not met. Income support should not be suspended or cancelled.
+________________
+
+
+Scenario 2 — Birth Verification for New Dependent
+A recipient reports their wife gave birth to a third child. No prior pregnancy information was on file. Recipient is asked to provide birth verification. Information is not provided within the initial timeframe.
+Condition
+	Met?
+	Rationale
+	Essential for eligibility/entitlement?
+	Yes
+	Essential for accuracy of entitlement (adding dependent). Not required to determine eligibility of rest of benefit unit.
+	Notice provided?
+	Yes
+	Written notice sent specifying required documents (hospital record or Registrar General birth registration) and consequences of non-compliance.
+	Within recipient's ability to obtain?
+	No
+	Recipient applied to Registrar General but was advised of a 3-month wait. Provided hospital bracelet as interim proof and agreed to submit registration once received.
+	Outcome: Conditions 1 and 2 met, but Condition 3 not met. Income support should not be suspended or cancelled. Dependent child should be added to the ODSP benefit unit.
+________________
+
+
+Scenario 3 — Missing Landing Records (15-Year Recipient)
+A file review for a long-term recipient (15 years) identified missing landing record verification. A birth certificate showing birth in England was on file. Recipient was asked to provide landing records and submitted a letter from IRCC confirming no record of landing papers exists on file.
+Condition
+	Met?
+	Rationale
+	Essential for eligibility/entitlement?
+	Yes
+	Landing records are essential for determining eligibility.
+	Notice provided?
+	Yes
+	Written notice sent as part of the file review process.
+	Within recipient's ability to obtain?
+	No
+	Recipient made reasonable efforts but IRCC confirmed records do not exist. IRCC letter placed on file as verification.
+	Outcome: Conditions 1 and 2 met, but Condition 3 not met. Income support should not be suspended or cancelled. IRCC letter retained on file; documentation not required at next file review.
+________________
+
+
+Scenario 4 — Unreasonable Timeframe for Extended Health Benefit Documentation
+A recipient receiving the Extended Health Benefit is asked to provide 12 months of prescription costs, dental costs, and bank statements — with a 10-day deadline or income support will be suspended.
+Condition
+	Met?
+	Rationale
+	Essential for eligibility/entitlement?
+	Yes
+	Documentation is essential for determining eligibility for the Extended Health Benefit.
+	Notice provided?
+	Yes
+	Written notice sent outlining required information.
+	Within recipient's ability to obtain?
+	Partially
+	Documentation is obtainable, but a 10-day timeframe is unreasonable.
+	Outcome: Income support should not be cancelled. Recipient must be given a reasonable timeframe to obtain the documentation.
+________________
+
+
+Scenario 5 — Property Verification with Physical and Seasonal Barriers
+During an EVP interview in winter, a third-party check reveals the recipient may own a second property in another province potentially exceeding the asset limit. Recipient is given two weeks to provide property documentation. Recipient has limited mobility, making it difficult to access her bank or lawyer during winter months.
+Condition
+	Met?
+	Rationale
+	Essential for eligibility/entitlement?
+	Yes
+	Documentation is essential for determining ongoing eligibility.
+	Notice provided?
+	Yes
+	Written notice given during EVP interview outlining required documentation.
+	Within recipient's ability to obtain?
+	Partially
+	Documentation is obtainable, but the two-week timeframe is unreasonable given physical limitations and winter weather conditions.
+	Outcome: Income support should not be cancelled. Recipient must be given a reasonable timeframe accounting for her physical limitations and seasonal barriers.
+
+
+Definition and Treatment of Assets 4.1 https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/41-definition-and
+Asset limits: 
+* The prescribed asset limits for a benefit unit are $40,000 for a single recipient, $50,000 for a couple and $500 for each dependant other than a spouse.
+Exempt Assets: 
+Here is the complete list — formatted for your Google Doc:
+________________
+
+
+Directive 4.1 — Complete List of Exempt Assets Under ODSP
+________________
+
+
+Principal Residence & Property
+* Principal residence (home itself)
+* Proceeds from sale of principal residence if used to purchase another within 12 months
+* Second property if Director approves it as necessary for health/well-being, OR for 6 months if reasonable efforts to sell are being made
+________________
+
+
+Vehicles
+* One motor vehicle — exempt regardless of value
+* Second vehicle — exempt if net value ≤ $15,000 AND required for a dependent to maintain employment
+________________
+
+
+Insurance
+* Life insurance policies — cash surrender value up to $100,000 per person (must remain in policy; combined with trust cannot exceed $100,000)
+* ODRAP insurance payments — when used for intended purpose (temporary living expenses, replacement/repair of exempt or allowable assets)
+* Pre-paid funerals — for any benefit unit member
+________________
+
+
+Trusts & Inheritance
+* Funds held in trust — up to $100,000 from inheritances or life insurance proceeds; interest may be reinvested if capital stays within limit
+________________
+
+
+Registered Plans
+* Registered Disability Savings Plans (RDSPs) — fully exempt, no limit
+* Locked-in RRSPs — from employer pension funds where funds cannot be accessed until retirement age (typically 55+)
+* Locked-in Retirement Accounts (LIRAs, LIFs, LRIFs) — capital remaining in account; withdrawn portions subject to income/asset rules
+* RESPs — for related persons (by blood, marriage, or adoption); includes Canada Education Savings Grants
+________________
+
+
+Pension & Retirement
+* Pension funds accessed for financial hardship — if used for eviction prevention, medical expenses, home renovations for disability, or first/last month's rent
+* Pension funds for shortened life expectancy — if withdrawal approved due to less than 2 year life expectancy
+* Excess pension amounts — under federal Income Tax Act in rare transfer situations
+________________
+
+
+Employment & Business
+* Business assets — up to $20,000 for self-employed persons (inventory, stock, raw materials); $20,000 total applies even if multiple people own same business or one person owns multiple businesses
+* Tools of the trade — essential to business/employment operation; includes business vehicles used exclusively for business
+* Farm assets — machinery and equipment required for farming operations
+________________
+
+
+Education & Students
+* Student loans, grants, awards, and bursaries — from specified federal/provincial programs while enrolled
+* Post-secondary student earnings — employment and training income; exempt up to 16 weeks pre-enrollment through active studies if used for education costs
+* Secondary school student earnings — exempt if applied to post-secondary education within a reasonable timeframe
+* Dependent child earnings — assets derived from a dependent child's earnings are exempt
+* LEAP incentive payments — if used for post-secondary education or invested in RESP for dependent child
+________________
+
+
+Mortgages & Loans
+* Mortgages receivable — amount remaining to be paid to benefit unit member
+* Exempt loans — for purchasing exempt assets, principal residences, approved health/welfare assets, first/last month's rent, or education/training
+* Residential Rehabilitation Assistance Program (RRAP) loans/contributions — if Director approves reasonable timeline for use
+* Ontario Renovates loans/grants — for home safety, efficiency, accessibility, or creating affordable rental units
+________________
+
+
+Compensation & Awards
+* Compensation awards — pain/suffering, expenses from injury/death, loss of care/guidance, non-economic loss under workplace legislation
+* Arts grants — for creation, production, professional development, promotion, residency, research, networking, commissioning, and accessibility expenses
+________________
+
+
+Government & Special Payments
+* Ontario Autism Program payments
+* Ontario Disaster Relief Assistance (ODRAP) — except loss of income payments
+* Soldiers' Aid Commission Act, 2020 payments
+* Quest for Gold — Ontario Athlete Assistance Program
+* On-reserve Income Assistance supplementary relief (Indigenous Services Canada)
+* Indigenous Culture Fund grants (Ontario Arts Council)
+* Aboriginal land claim settlement payments — capital amount from Ontario/Canada agreements
+* Transplant Patient Expense Reimbursement (TPER) payments — if used for intended purpose within Director-approved timeframe
+* ODSP income support arrears from retroactive entitlement — exempt for 6 months; may continue under Director discretion
+________________
+
+
+Historical Settlement Payments (All Exempt Except Where Noted)
+* Helpline Reconciliation Model Agreements
+* Multi-Provincial/Territorial Assistance Program Agreements
+* Grandview Agreements
+* Extraordinary Assistance Plan (Canada)
+* Ontario Hepatitis C Compensation Plan
+* 1986–1990 Hepatitis C Settlement — except loss of income/support payments
+* Pre-1986/Post-1990 Hepatitis C Settlement — except loss of income or home services (effective April 20, 2007)
+* Alberta Sterilization Compensation
+* Walkerton Compensation Plan — except future lost income payments
+* Indian Residential Schools Settlement — except loss of income (effective May 1, 2006)
+* Huronia/Rideau/Southwestern Regional Centre class action settlements
+* Clegg v. Her Majesty the Queen settlement (approved April 25, 2016)
+* Nova Scotia Home for Colored Children Settlement
+* Thalidomide Survivors Contribution Program
+* Sixties Scoop Settlement Agreement
+* Federal Indian Day Schools Settlement Agreement
+* Mercury Disability Fund (English and Wabigoon River Systems)
+* First Nations Drinking Water Settlement Agreement
+* First Nations Child and Family Services/Jordan's Principle Settlement
+* Indian Boarding Homes Settlement Agreement
+________________
+
+
+Household & Personal
+* Necessities of living — furniture, clothing, household effects necessary for reasonable household functioning
+________________
+
+
+Key Conditions
+* Most discretionary exemptions require Director approval
+* Time-limited exemptions typically range from 6–12 months
+* Life insurance cash value + trust capital combined cannot exceed $100,000
+* Funds must generally be used for stated purposes within reasonable timeframes
+Definition and Treatment of Income 5.1 https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/51-definition-and 
+Income includes
+* All wages, salaries, casual earnings or any remuneration paid pursuant to employment or a training program;
+* Income or revenue from an interest in or operation of a business including sale of goods or services, commissions, cash value of goods or services received in kind, sale of or interest earned on business assets and any other business income;
+* All regular or periodic payments received under a pension plan, superannuation scheme or insurance benefit;
+* All payments received from an annuity (other than an annuity or deferred annuity that has been purchased from a life insurance company) (See Directive 4.8 Life Insurance Policies for further information);
+* All payments received under a mortgage agreement;
+* All pension or other payments received pursuant to the legislation of any other country (Note: This does not apply to pensions or payments from other jurisdictions that are equivalent to the Canada Pension Plan (CPP) and Quebec Pension Plan (QPP) surviving child benefits and disabled contributor’s child benefits);
+* All payments, in cash or in kind, for spousal support received pursuant to a court order, judgment or an agreement;
+* For details regarding treatment of matrimonial home and mortgage payments where the applicant/recipient resides in the home please see Directive 5.15 Spousal and Child Support.
+* All payments received as a retainer from a Children’s Aid Society for being available to provide emergency care;
+* All payments received or available if the applicant/recipient is a sponsored immigrant or nominated relative under the Immigration Act (Canada) or the Immigration and Refugee Protection Act (Canada);
+* Any payment(s) received from the sale or disposition of an asset unless otherwise exempt (see Section “Income from Sale of Assets”);
+* All interest earned from the proceeds of a compensation award regardless of the amount of the award (Please note. It is considered failure to make reasonable efforts to pursue available resources if a recipient chooses to defer interest from a compensation award);
+* Dividends earned from a life insurance policy that are not otherwise exempt (see Section “Dividends Earned”);
+* Interest or dividend payments earned from the capital of a trust that are not otherwise exempt (see Section “Dividends Earned”);
+* 60% of gross income for renting self-contained quarters, land or a garage;
+* The greater of $100 or 60% of gross income received for providing lodging without meals;
+* The greater of $100 or 40% of gross income received for providing lodging with meals;
+* Income replacement payments received by or on behalf of a member of the benefit unit under the:
+   * Workplace Safety and Insurance Act and Workers’ Compensation Act that are benefits for loss of income due to an injury on the job. This does not apply to a WSIB NEL award that provides compensation for the physical, functional or psychological loss suffered from permanent impairment caused by a work-related injury or illness.
+   * Pension Act (Canada) - Note: This does not apply to CPP Orphan Benefit (also known as CPP Surviving Child Benefit) or the CPP Disabled Contributors Child Benefit.
+   * Quebec Pension Plan - Note: This does not apply the QPP Orphan Pension or the QPP Disabled Person’s Child Benefit or equivalent benefits from other jurisdictions.
+   * Employment Insurance Act (Canada)
+   * War Veterans Allowance Act (Canada)
+   * Civilians War Pension And Allowances Act (Canada)
+   * Old Age Security Act (Canada) and Guaranteed Income Supplement
+   * Ontario Guaranteed Annual Income Act.
+Income Exemptions include: 
+* Earnings exemptions (See Directive 5.3 Deductions From Employment and Training Income);
+* Earnings of dependent children;
+* Earnings or payments under a training program of recipients, spouses and dependent adults attending secondary school full-time(See Directive 5.3 Deductions From Employment and Training Income);
+* Training allowance and cash reimbursements of child care and transportation for individuals who reside in a prescribed First Nation community and who are participating in an employment training opportunity for up to 12 months. (See Directive 5.3 Deductions From Employment and Training Income);
+* Earnings of persons attending post-secondary school (See Directive 5.18 Exemption of Earnings of Post-Secondary Students);
+* The portion of a payment from the sale of an asset, used to purchase a principal residence, an asset necessary for health and welfare, an exempt asset, or an asset that does not result in the recipient exceeding the prescribed asset limit;
+* Interest earned on liquid assets up to the prescribed asset limits, e.g. $40,000 for a single recipient;
+* An amount up to $10,000 in a 12 month period per member of the benefit unit, in the form of gifts or voluntary payments for any purpose from any source; (this includes monies from trusts, life insurance policies, honorariums and windfalls). Casual gifts of insignificant value, e.g. basic clothing, meals, occasional food purchases are also exempt.
+* Honorariums are generally payments made to individuals to recognize services provided, where payment is not required. For example, a person may volunteer or be asked to participate on a committee and may receive an honorarium. In these cases, honorariums are considered voluntary payments and may be included in the $10,000 exemption for voluntary payments.
+* Honorariums paid in a way that is similar to a salary, to fulfill an obligation to compensate the recipient for services provided, are treated as employment income, and not as voluntary payments under ODSP. In these cases, the usual earnings exemptions apply.
+* Payments from any source in the form of gifts or voluntary payments used for disability-related items and services or for education and training incurred because of the disability of a member of the benefit unit.
+* There is no limit on the value of these contributions, provided they will not be reimbursed from other sources. For this provision to apply it is not required that the intent of the voluntary payment is for the purchase of these types of items/expenses only that is used for these purposes.
+* Gifts or voluntary payments that will be applied to the purchase of a principal residence, an exempt vehicle, or that will be applied to the first and last month’s rent necessary to secure accommodation. (See Directive 5.8 Gifts and Voluntary Payments for more detailed information regarding treatment of gifts.)
+* RDSP related exemptions:
+* gifts or voluntary contributions made to RDSPs by family members and other third parties;
+* interest earned on and re-invested in an RDSP;
+* the federal Canada Disability Savings Grants and Canada Disability Savings Bonds; and
+* all withdrawals from an RDSP for any purpose.
+* Refundable tax credits including the:
+* Canada Child Tax Benefit
+* Canada Child Benefit
+* Ontario Children’s Activity Tax Credit
+* Ontario Trillium Benefit Payment;
+* Ontario Child Benefit (OCB) payments;
+* Payments from the Ontario Child Care Supplement for Working Families (OCCSWF);
+* Payments from the Universal Child Care Benefit (UCCB);
+* Payments from the Canada Pension Plan Orphan Benefit (also known as surviving child benefit;
+* Payments from the Quebec Pension Plan Orphan Pension;
+* Payments made under the Canada Pension Plan Disabled Contributors Child Benefit;
+* Payments made under the Quebec Pension Plan Disabled Person’s Child Benefit;
+* Payments from other jurisdictions that are equivalent to the CPP Orphan Benefit or QPP Orphan Pension or the CPP Disabled Contributors Child benefit or QPP Disabled Person’s Child Benefit.
+* Payments made under the Soldiers’ Aid Commission Act, 2020;
+* Child support (Effective January 1, 2017). Please see Directive 5.15 Spousal and Child Support for more detailed information;
+* Payments received under subsection 147(14) of the Worker's Compensation Act, known as B165 payments;
+* Payments received for property damage and temporary living expenses through the Ontario Disaster Relief Assistance Program (ODRAP) other than payments for loss of income;
+* Payments (cash and in-kind) received by evacuees of the Kashechewan First Nation between October 2005 and September 2006, from a municipality or a Tribal Council made on behalf of the federal Department of Indian Affairs and Northern Development (Canada);
+* Insurance payments made for temporary living expenses and to replace or repair lost/damaged exempt assets or assets within allowable asset limits but not payments for loss of income;
+* Mortgage payments paid by disability insurance purchased by an applicant/recipient on a mortgage for his/her principal residence;
+* A forgivable loan under the First Nation, Intuit, Métis Urban and Rural (FIMUR) Housing home Ownership Assistance Program.
+* A forgivable loan or a grant under the Residential Rehabilitation Assistance Program (RRAP) that provides assistance to on-reserve low-income homeowners to bring their homes up to safety and health standards, or improve energy efficiency.
+* A forgivable loan or grant under Ontario Renovates that provides assistance to low-income homeowners to bring their homes up to safety and health standards, improve energy, efficiency and/or increase accessibility of the home through modifications and adaptations; and, create a new affordable rental unit within an existing single family home;
+* Payments made under the Investment in Affordable Housing (IAH) - operating components that exceed the maximum shelter allowance up to the actual shelter costs;
+* Payments made under the Government of Canada’s Reaching Home program, or by a service manager designated under the Housing Services Act, 2011, under a program to prevent homelessness administered by the Ministry of Municipal Affairs and Housing (MMAH) that are for the following special purposes are exempt as income:
+* rent deposits;
+* establishing a new principal residence;
+* maintaining the health and welfare of a member of the benefit unit in her or her current residence;
+* arrears relating to shelter costs; or other housing and homelessness-related services, items or costs approved by the Director of Ontario Works.
+* Payments made by a service manager designated under the Housing Services Act, 2011, under a program to prevent homelessness administered by the Ministry of Municipal Affairs and Housing (MMAH) for personal needs made to domiciliary hostel residents up to the amount equivalent to the ODSP amount issued for personal needs to recipients residing in a long-term care home;
+* Monthly housing allowances or rent supplements made under the Government of Canada’s Reaching Home program (formerly known as the Homelessness Partnering Strategy) are exempt as income up to the amount that actual rent exceeds the maximum shelter allowance;
+* All payments made under the Canada-Ontario Housing Benefit (COHB) program (e.g., housing allowances, payments for first/last month’s rent). (See Directive 6.2 Shelter Calculation);
+* Financial grants, items or services that are issued for energy-conservation in homes through Conservation and Demand Management Programs offered by local Electricity Distribution Companies;
+* Financial grants, items or services that are issued for energy-conservation in homes through Demand Side Management programs offered by local Natural Gas Distributors;
+* Benefits in the form of a cheque or voucher received through the Water Filter Fun. program;
+* All direct financial assistance received from the Ministry of Tourism, Culture and Sport’s Quest for Gold - Ontario Athlete Assistance Program;
+* Funds received from the Ministry of College and Universities or Canada Student Financial Assistance for education costs such as books, tuition, instructional supplies, transportation costs, child care and compulsory fees;
+* Funds received from the Ministry College and Universities under the Second Career program for education costs.
+* All funds received from the Ministry of Colleges and Universities under the Micro-credentials program;
+* A bursary received by a full-time student enrolled in a secondary school under 8(1)18 of the Education Act;
+* The Dr. Albert Rose Bursary to assist public housing tenants attending post-secondary school;
+* Payments from an RESP, intended and used for education costs, received by a recipient or any other member of a benefit unit as well as gifts and voluntary payments into an RESP in addition to the $10,000 gift and voluntary payment exemption. See Directive 5.11 Post-Secondary Education;
+* Proceeds from a court judgement or legal settlement or an award from a statutory tribunal (such as compensation resulting from being a victim of an automobile accident, sexual assault or violent crime) received as damages or compensation for pain and suffering, due to injury to or the death of a member of the benefit unit. See Directive 4.6 Compensation Awards;
+* Compensation received as settlement for a claim of abuse sustained at an Indian Residential School, other than compensation for loss of income;
+* Pre-judgement interest awarded as compensation for the delay in receiving damages for pain and suffering as a result of injury to or death of a member of the benefit unit, See Directive 4.6 Compensation Awards;
+* Independent Living Allowance payments from the Workplace Safety and Insurance Board received annually by severely impaired workers;
+* A full income exemption applies to the total amount of a compensation award for the following:
+* awards for pain and suffering as a result of an injury to or the death of a member of the benefit unit;
+* expenses actually or reasonably incurred or to be incurred as a result of injury to or death of a member of the benefit unit;
+* loss of care, guidance and companionship due to an injury to or the death of a family member under the Family Law Act;
+* non-economic loss under section 46 of the Workplace Safety and Insurance Act, 1997 or section 42 of the Workers’ Compensation Act.
+* Interest earned on the capital of an inheritance retained in trust up to the allowable limit of $100,000. See Directive 4.7 Funds Held in Trust;
+* All payments from the trust, including interest earned, used for the purchase of approved disability-related items and services (e.g. assistive devices) or education and training expenses incurred because of the benefit unit member's disability are exempt as income without limit. See Directive 5.9 Treatment of Disability-Related Items and Services;
+* Payments from the capital of a trust (including interest earned and retained therein) for non-disability-related purposes are exempt as income to a combined maximum of $10,000 in a twelve month period per member of the benefit unit (the combined maximum includes payments from a trust, gifts or voluntary payments, life insurance policies, honorariums and windfalls). In addition to the $10,000 exemption, payments from the capital of a trust that will be applied to the purchase of a principal residence, an exempt vehicle, or that will be applied to the first and last month’s rent necessary to secure accommodation are also exempt as income. (See Directive 5.8 Gifts and Voluntary Payments for more detailed information regarding treatment of gifts.)
+* This exemption applies provided the applicant/recipient files an annual report, which is satisfactory to the Director, documenting all income and expense transactions relating to the inherited assets held in trust;
+* Life insurance policies, annuities, deferred annuities and segregated funds purchased through a life insurance company, with a cash surrender value of up to $100,000 per member of the benefit unit, provided that the cash surrender value remains within the policy. (Note: under the Insurance Act, annuities, deferred annuities, and segregated funds purchased through a life insurance company are considered to be life insurance);
+* Note: Interest and dividends from an exempt life insurance policy and loans against the face value of an exempt life insurance policy may be exempt as follows:
+* * income generated from the policy is exempt provided that it is reinvested in the policy and that the total cash surrender value does not exceed $100,000;
+* payments from or loans against the face value of the policy are exempt, provided the funds are used for approved disability-related items and services, or education and training expenses incurred because of the person’s disability, applied to the purchase of a principal residence, an exempt vehicle or applied to the first and last month’s rent necessary to secure accommodation.
+* partial redemption of the cash surrender value may be exempt if there is room to use the maximum exemption of $10,000 per twelve-month period per member of the benefit unit;
+Basic Needs Calculation 6.1 https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/61-basic-needs
+Basic Needs Amounts — ODSP Income Support
+Total Dependants (excl. Spouse)
+	Dependants 18+
+	Dependants 0–17
+	Recipient (Note 1)
+	Recipient & Spouse (Note 2)
+	Recipient & Spouse (Note 3)
+	0
+	0
+	0
+	$809
+	$1,166
+	$1,613
+	1
+	0
+	1
+	$809
+	$1,166
+	$1,613
+	1
+	1
+	0
+	$1,255
+	$1,394
+	$1,841
+	2
+	0
+	2
+	$809
+	$1,166
+	$1,613
+	2
+	1
+	1
+	$1,255
+	$1,394
+	$1,841
+	2
+	2
+	0
+	$1,484
+	$1,648
+	$2,095
+	________________
+
+
+Note 1. A recipient if there is no spouse included in the benefit unit. 
+Note 2. A recipient with a spouse included in the benefit unit if Note 3 does not apply. 
+Note 3. A recipient with a spouse included in the benefit unit if each of the recipient and the spouse is a person with a disability or a person referred to in subparagraph 1 i of subsection 4 (1) or paragraph 3, 5.1, 5.2, 6, 7 or 8 of subsection 4 (1).
+Shelter Calculation 6.2 https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/62-shelter-calculation
+Maximum Monthly Shelter Allowance — ODSP Income Support
+Benefit Unit Size
+	Maximum Monthly Shelter Allowance
+	1
+	$599
+	2
+	$941
+	3
+	$1,018
+	4
+	$1,105
+	5
+	$1,192
+	6 or more
+	$1,235

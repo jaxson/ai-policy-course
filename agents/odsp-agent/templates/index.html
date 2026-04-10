@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Worker Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f8f8f8;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .header-top {
+            flex-shrink: 0;
+        }
+
+        /* --- Ontario.ca style header --- */
+        .header-top {
+            background: #1a1a1a;
+            color: white;
+            padding: 10px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-top-left {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .header-logo {
+            height: 44px;
+        }
+
+        .header-title-block h1 {
+            font-size: 17px;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 0.2px;
+        }
+
+        .header-title-block p {
+            font-size: 11px;
+            color: #aaa;
+            margin-top: 2px;
+        }
+
+        /* --- Navigation sidebar --- */
+        .nav-bar {
+            background: #00853F;
+            display: flex;
+            flex-direction: column;
+            padding: 8px 0;
+            border-right: 3px solid #006B32;
+            min-width: 160px;
+            flex-shrink: 0;
+            height: 100%;
+        }
+
+        .tab {
+            padding: 14px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.8);
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            border-left: 3px solid transparent;
+            text-align: left;
+            transition: all 0.15s;
+            letter-spacing: 0.2px;
+        }
+
+        .tab:hover { color: white; background: rgba(255,255,255,0.1); }
+        .tab.active { color: white; border-left: 3px solid white; background: rgba(255,255,255,0.15); }
+
+        .body-area {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            overflow: hidden;
+            height: 0;
+        }
+
+        .tab-content {
+            display: none;
+            flex: 1;
+            overflow-y: auto;
+            flex-direction: column;
+        }
+
+        .tab-content.active { display: flex; }
+
+        /* --- Agent Tab --- */
+        .chat-window {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: #fafafa;
+        }
+
+        .message-row {
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+        }
+
+        .message-row.user {
+            flex-direction: row-reverse;
+        }
+
+        .avatar {
+            font-size: 16px;
+            flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: white;
+            border: 2px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            z-index: 1;
+            position: relative;
+        }
+
+        .message-row.user .avatar {
+            border-color: #00853F;
+        }
+
+        .message {
+            max-width: 75%;
+            padding: 10px 14px;
+            border-radius: 4px;
+            font-size: 14px;
+            line-height: 1.6;
+            word-wrap: break-word;
+        }
+
+        .message.user {
+            background: #00853F;
+            color: white;
+        }
+
+        .message.assistant {
+            background: white;
+            color: #1a1a1a;
+            border: 1px solid #e0e0e0;
+        }
+
+        .message.assistant h1, .message.assistant h2, .message.assistant h3 { margin: 14px 0 4px; font-size: 14px; font-weight: 700; color: #1a1a1a; }
+        .message.assistant h1:first-child, .message.assistant h2:first-child, .message.assistant h3:first-child { margin-top: 4px; }
+        .message.assistant ul, .message.assistant ol { padding-left: 16px; margin: 4px 0; }
+        .message.assistant li { margin: 2px 0; }
+        .message.assistant p { margin: 3px 0; }
+        .message.assistant strong { font-weight: 700; }
+        .message.assistant hr { border: none; border-top: 1px solid #ddd; margin: 6px 0; }
+        .message.assistant a { color: #0066CC; }
+        .message.assistant blockquote { border-left: 4px solid #00853F; padding-left: 10px; color: #555; margin: 6px 0; }
+
+        .input-area {
+            padding: 16px 32px;
+            border-top: 1px solid #ddd;
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            background: white;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            flex: 1 1 auto;
+            min-width: 0;
+            padding: 12px 16px;
+            border: 1px solid #bbb;
+            border-radius: 2px;
+            font-size: 14px;
+            font-family: inherit;
+            resize: none;
+            outline: none;
+            height: 52px;
+            max-height: 150px;
+            box-sizing: border-box;
+        }
+
+        textarea:focus { border-color: #00853F; box-shadow: 0 0 0 2px rgba(0,133,63,0.15); }
+
+        button {
+            background: #00853F;
+            color: white;
+            border: none;
+            border-radius: 2px;
+            padding: 0 24px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            letter-spacing: 0.3px;
+        }
+
+        button:hover { background: #006B32; }
+        button:disabled { background: #aaa; cursor: not-allowed; }
+
+        .typing {
+            background: white;
+            border: 1px solid #e0e0e0;
+            color: #888;
+            align-self: flex-start;
+            padding: 10px 14px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        /* --- Static Tabs --- */
+        .static-tab {
+            flex: 1;
+            overflow-y: auto;
+            padding: 36px 48px;
+            background: white;
+        }
+
+        .static-tab h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+            padding-bottom: 12px;
+            border-bottom: 4px solid #00853F;
+            display: inline-block;
+        }
+
+        .static-tab p, .static-tab li {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .static-tab a { color: #0066CC; }
+        .static-tab a:hover { text-decoration: underline; }
+
+        .static-tab ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .static-tab li { margin-bottom: 6px; }
+
+        .static-tab .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-left: 4px solid #00853F;
+            border-radius: 2px;
+            padding: 18px 22px;
+            margin-bottom: 18px;
+            margin-top: 18px;
+        }
+
+        .static-tab .card h3 {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        /* Notes tab */
+        .notes-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 24px 32px;
+            gap: 12px;
+            background: white;
+        }
+
+        .notes-area label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .notes-area textarea {
+            flex: 1;
+            height: auto;
+            max-height: none;
+            border-radius: 2px;
+            padding: 16px;
+            font-size: 14px;
+            line-height: 1.7;
+            border: 1px solid #bbb;
+            resize: none;
+            outline: none;
+        }
+
+        .notes-area textarea:focus { border-color: #00853F; }
+
+        .notes-save {
+            align-self: flex-end;
+            padding: 10px 24px;
+        }
+
+        /* --- Sidebar toggle --- */
+        .nav-bar .nav-toggle {
+            margin-top: auto;
+            padding: 14px 12px;
+            background: none !important;
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            border-radius: 0;
+            color: rgba(255,255,255,0.9) !important;
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+            width: 100%;
+            font-weight: normal;
+            letter-spacing: 0;
+            display: block;
+        }
+
+        .nav-bar .nav-toggle:hover { color: white !important; background: rgba(255,255,255,0.1) !important; }
+
+        .nav-bar.collapsed {
+            min-width: 0;
+            width: 36px;
+            overflow: hidden;
+        }
+
+        .nav-bar.collapsed .tab {
+            display: none;
+        }
+
+        /* --- Collapsible cards --- */
+        .card h3 {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .card h3 .toggle-icon {
+            font-size: 11px;
+            color: #888;
+            transition: transform 0.2s;
+        }
+
+        .card-body {
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            max-height: 1000px;
+        }
+
+        .card.collapsed .card-body {
+            max-height: 0;
+        }
+
+        .card.collapsed .toggle-icon {
+            transform: rotate(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-top">
+            <div class="header-top-left">
+                <img src="/static/logo.jpg" alt="Government of Ontario" class="header-logo">
+                <div class="header-title-block">
+                    <h1>ODSP Information Centre</h1>
+                    <p>Ontario Public Service &mdash; Not Actually Affiliated with the Government of Ontario</p>
+                </div>
+            </div>
+        </div>
+        <div class="body-area">
+        <div class="nav-bar">
+            <button class="tab active" onclick="switchTab('readme', this)">Read Me First</button>
+            <button class="tab" onclick="switchTab('agent', this)">AI Agent</button>
+            <button class="tab" onclick="switchTab('reference', this)">Reference Points</button>
+            <button class="tab" onclick="switchTab('quickfacts', this)">Quick Facts</button>
+            <button class="tab" onclick="switchTab('eligibility', this)">Eligibility Checker</button>
+            <button class="tab" onclick="switchTab('code', this)">Code</button>
+        </div>
+        <button id="navToggle" onclick="toggleNav()" style="position:fixed;bottom:20px;left:10px;width:36px;height:36px;background:#006B32;color:white;border:none;border-radius:50%;font-size:16px;cursor:pointer;z-index:999;display:flex;align-items:center;justify-content:center;">↩</button>
+
+        <!-- Agent Tab -->
+        <div class="tab-content" id="tab-agent">
+            <div class="chat-window" id="chat"></div>
+            <div class="input-area">
+                <textarea id="input" placeholder="Type your notes or question here..." onkeydown="handleKey(event)"></textarea>
+                <button id="sendBtn" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+        <!-- Read Me First Tab -->
+        <div class="tab-content active" id="tab-readme">
+            <div class="static-tab">
+                <h2>Read Me First</h2>
+                <p style="margin-bottom:20px;text-align:center;"><strong>This agent is a Canadiana Gallery study room production.</strong></p>
+                <div style="text-align:center;margin-bottom:24px;">
+                    <img src="/static/profile.jpg" alt="DH & DS" style="width:200px;height:200px;object-fit:cover;border-radius:50%;border:3px solid #00853F;">
+                    <p style="margin-top:12px;"><strong>This is not a product of the Ontario Government (yet 😉)</strong></p>
+                </div>
+
+                <div class="card collapsed">
+                    <h3 onclick="toggleCard(this)"><strong>What Is This?</strong><span class="toggle-icon">▼</span></h3>
+                    <div class="card-body">
+                        <p>An AI-powered information agent trained on Ontario Disability Support Program (ODSP) Income Support Policy Directives. Designed to assist both ODSP caseworkers and recipients with quick, accurate, policy-based answers.</p>
+                    </div>
+                </div>
+
+                <div class="card collapsed">
+                    <h3 onclick="toggleCard(this)"><strong>Important Limitations</strong><span class="toggle-icon">▼</span></h3>
+                    <div class="card-body">
+                        <ul>
+                            <li>This agent does not make eligibility determinations</li>
+                            <li>It only answers based on the directives it has been trained on — questions outside this scope will be flagged</li>
+                            <li>All information should be verified with your local ODSP office or caseworker before acting on it</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card collapsed">
+                    <h3 onclick="toggleCard(this)"><strong>Privacy Notice</strong><span class="toggle-icon">▼</span></h3>
+                    <div class="card-body">
+                        <ul>
+                            <li>Do not enter personally identifying information into the chat — this includes full names, Social Insurance Numbers (SIN), Ontario Health Numbers, case file numbers, or dates of birth</li>
+                            <li>Use general descriptions when describing your situation (e.g. "a single recipient with two dependants" rather than specific personal details)</li>
+                            <li>This tool is not affiliated with the Ontario government and does not store or transmit information to any government system</li>
+                            <li>Conversations are not saved between sessions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card collapsed">
+                    <h3 onclick="toggleCard(this)"><strong>What We Trained Our Agent On</strong><span class="toggle-icon">▼</span></h3>
+                    <div class="card-body">
+                        <p style="margin-bottom:10px;">The agent is trained on the following ODSP policy directives for income support.</p>
+                        <ul>
+                            <li>1.1 — Applications</li>
+                            <li>1.2 — Disability Adjudication Process</li>
+                            <li>2.1 — Who is Eligible: Dependent Adults</li>
+                            <li>2.3 — Spouse</li>
+                            <li>3.1 — Reviewing Eligibility</li>
+                            <li>4.1 — Definition and Treatment of Assets</li>
+                            <li>5.1 — Definition and Treatment of Income</li>
+                            <li>6.1 — Basic Needs Calculation</li>
+                            <li>6.2 — Shelter Calculation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card collapsed">
+                    <h3 onclick="toggleCard(this)"><strong>What It Can Help With</strong><span class="toggle-icon">▼</span></h3>
+                    <div class="card-body">
+                        <ul>
+                            <li>Eligibility questions for applicants and recipients</li>
+                            <li>Understanding asset and income limits</li>
+                            <li>Calculating basic needs and shelter amounts</li>
+                            <li>Application process and required documentation</li>
+                            <li>Reviewing eligibility and suspension conditions</li>
+                            <li>Understanding dependent adult and spousal definitions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card collapsed">
+                    <h3 onclick="toggleCard(this)"><strong>How It Works</strong><span class="toggle-icon">▼</span></h3>
+                    <div class="card-body">
+                        <p>Ask a question in plain language. The agent will respond with a direct answer based strictly on the policy directives above, with inline citations linking back to the relevant government source for verification.</p>
+                    </div>
+                </div>
+
+                <div class="card collapsed">
+                    <h3 onclick="toggleCard(this)"><strong>Sample Questions</strong><span class="toggle-icon">▼</span></h3>
+                    <div class="card-body">
+                        <ul>
+                            <li><em>"What documents do I need to apply for ODSP?"</em></li>
+                            <li><em>"Is my car counted as an asset?"</em></li>
+                            <li><em>"How is my basic needs amount calculated if I have two dependants?"</em></li>
+                            <li><em>"Can my income support be suspended if I don't provide documents?"</em></li>
+                            <li><em>"What counts as financial independence for a dependent adult?"</em></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card collapsed">
+                    <h3 onclick="toggleCard(this)"><strong>Acknowledgements</strong><span class="toggle-icon">▼</span></h3>
+                    <div class="card-body">
+                        <p><strong>Adam McConkey</strong></p>
+                        <p style="margin-top:8px;">We would like to extend our sincere gratitude to Adam McConkey for his guidance and expertise in helping define the scope of this agent.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Reference Points Tab -->
+
+        <div class="tab-content" id="tab-reference">
+            <div class="static-tab">
+                <h2>ODSP Policy Directives — Income Support</h2>
+                <p style="margin-bottom:20px;color:#555;">Click any directive below to open the full policy on the Ontario government website.</p>
+                <div class="card">
+                    <h3>Applications & Adjudication</h3>
+                    <ul>
+                        <li><a href="https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/11-applications" target="_blank">1.1 — Applications</a></li>
+                        <li><a href="https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/12-disability" target="_blank">1.2 — Disability Adjudication Process</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Eligibility</h3>
+                    <ul>
+                        <li><a href="https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/21-who-eligible" target="_blank">2.1 — Who is Eligible: Dependent Adults</a></li>
+                        <li><a href="https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/23-spouse" target="_blank">2.3 — Spouse</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Reviewing Eligibility</h3>
+                    <ul>
+                        <li><a href="https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/31-reviewing" target="_blank">3.1 — Reviewing Eligibility</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Assets & Income</h3>
+                    <ul>
+                        <li><a href="https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/41-definition-and" target="_blank">4.1 — Definition and Treatment of Assets</a></li>
+                        <li><a href="https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/51-definition-and" target="_blank">5.1 — Definition and Treatment of Income</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Income Support Calculations</h3>
+                    <ul>
+                        <li><a href="https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/61-basic-needs" target="_blank">6.1 — Basic Needs Calculation</a></li>
+                        <li><a href="https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support/62-shelter-calculation" target="_blank">6.2 — Shelter Calculation</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Full Policy Directive Index</h3>
+                    <ul>
+                        <li><a href="https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support" target="_blank">ODSP Income Support — Complete Policy Directives</a></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Contact & Support</h3>
+                    <ul>
+                        <li><strong>Apply by phone:</strong> 1-888-999-1142</li>
+                        <li><strong>TTY:</strong> 1-800-387-5559</li>
+                        <li><strong>Apply online:</strong> <a href="https://www.sada.mcss.gov.on.ca/" target="_blank">Social Assistance Digital Application (SADA)</a></li>
+                        <li><strong>Check application status:</strong> <a href="https://www.sada.mcss.gov.on.ca/applicationstatuschecker" target="_blank">Application Status Checker</a></li>
+                        <li><strong>Manage your benefits:</strong> <a href="https://mybenefits.mcss.gov.on.ca/" target="_blank">MyBenefits Portal</a></li>
+                        <li><strong>Find a local office:</strong> <a href="http://www.officelocator.mcss.gov.on.ca/" target="_blank">ODSP Office Locator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Facts Tab -->
+        <div class="tab-content" id="tab-quickfacts">
+            <div class="static-tab">
+                <h2>Quick Facts</h2>
+
+                <div class="card">
+                    <h3>Asset Limits</h3>
+                    <ul>
+                        <li><strong>Single recipient:</strong> $40,000</li>
+                        <li><strong>Couple:</strong> $50,000</li>
+                        <li><strong>Each dependant (other than spouse):</strong> $500</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Maximum Monthly Shelter Allowance</h3>
+                    <table style="width:100%;border-collapse:collapse;font-size:14px;">
+                        <thead>
+                            <tr style="background:#00853F;color:white;">
+                                <th style="padding:8px;text-align:left;">Benefit Unit Size</th>
+                                <th style="padding:8px;text-align:left;">Maximum Monthly Allowance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom:1px solid #ddd;"><td style="padding:8px;">1</td><td style="padding:8px;">$599</td></tr>
+                            <tr style="border-bottom:1px solid #ddd;background:#f9f9f9;"><td style="padding:8px;">2</td><td style="padding:8px;">$941</td></tr>
+                            <tr style="border-bottom:1px solid #ddd;"><td style="padding:8px;">3</td><td style="padding:8px;">$1,018</td></tr>
+                            <tr style="border-bottom:1px solid #ddd;background:#f9f9f9;"><td style="padding:8px;">4</td><td style="padding:8px;">$1,105</td></tr>
+                            <tr style="border-bottom:1px solid #ddd;"><td style="padding:8px;">5</td><td style="padding:8px;">$1,192</td></tr>
+                            <tr style="background:#f9f9f9;"><td style="padding:8px;">6 or more</td><td style="padding:8px;">$1,235</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card">
+                    <h3>Basic Needs Amounts</h3>
+                    <table style="width:100%;border-collapse:collapse;font-size:13px;">
+                        <thead>
+                            <tr style="background:#00853F;color:white;">
+                                <th style="padding:8px;text-align:left;">Total Dependants</th>
+                                <th style="padding:8px;text-align:left;">Aged 18+</th>
+                                <th style="padding:8px;text-align:left;">Aged 0–17</th>
+                                <th style="padding:8px;text-align:left;">Recipient</th>
+                                <th style="padding:8px;text-align:left;">Recipient & Spouse (Note 2)</th>
+                                <th style="padding:8px;text-align:left;">Recipient & Spouse (Note 3)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom:1px solid #ddd;"><td style="padding:8px;">0</td><td style="padding:8px;">0</td><td style="padding:8px;">0</td><td style="padding:8px;">$809</td><td style="padding:8px;">$1,166</td><td style="padding:8px;">$1,613</td></tr>
+                            <tr style="border-bottom:1px solid #ddd;background:#f9f9f9;"><td style="padding:8px;">1</td><td style="padding:8px;">0</td><td style="padding:8px;">1</td><td style="padding:8px;">$809</td><td style="padding:8px;">$1,166</td><td style="padding:8px;">$1,613</td></tr>
+                            <tr style="border-bottom:1px solid #ddd;"><td style="padding:8px;">1</td><td style="padding:8px;">1</td><td style="padding:8px;">0</td><td style="padding:8px;">$1,255</td><td style="padding:8px;">$1,394</td><td style="padding:8px;">$1,841</td></tr>
+                            <tr style="border-bottom:1px solid #ddd;background:#f9f9f9;"><td style="padding:8px;">2</td><td style="padding:8px;">0</td><td style="padding:8px;">2</td><td style="padding:8px;">$809</td><td style="padding:8px;">$1,166</td><td style="padding:8px;">$1,613</td></tr>
+                            <tr style="border-bottom:1px solid #ddd;"><td style="padding:8px;">2</td><td style="padding:8px;">1</td><td style="padding:8px;">1</td><td style="padding:8px;">$1,255</td><td style="padding:8px;">$1,394</td><td style="padding:8px;">$1,841</td></tr>
+                            <tr style="background:#f9f9f9;"><td style="padding:8px;">2</td><td style="padding:8px;">2</td><td style="padding:8px;">0</td><td style="padding:8px;">$1,484</td><td style="padding:8px;">$1,648</td><td style="padding:8px;">$2,095</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Code Tab -->
+        <div class="tab-content" id="tab-code">
+            <div class="static-tab">
+                <h2>Training Data — ODSP Policy Directives</h2>
+                <p style="margin-bottom:16px;color:#555;">The full policy directive text file used to train the agent's responses.</p>
+                <pre style="background:#1e1e1e;color:#d4d4d4;padding:24px;border-radius:10px;font-size:13px;line-height:1.7;overflow-x:auto;white-space:pre-wrap;word-wrap:break-word;max-height:400px;overflow-y:auto;">{{ policy_directives }}</pre>
+
+                <h2 style="margin-top:32px;margin-bottom:8px;">Agent Code — app.py</h2>
+                <p style="margin-bottom:16px;color:#555;">The backend code powering this agent. API keys and sensitive credentials have been redacted.</p>
+                <pre style="background:#1e1e1e;color:#d4d4d4;padding:24px;border-radius:10px;font-size:13px;line-height:1.7;overflow-x:auto;white-space:pre-wrap;word-wrap:break-word;">from flask import Flask, render_template, request, jsonify
+import anthropic
+import os
+
+app = Flask(__name__)
+client = anthropic.Anthropic(api_key="**** REDACTED ****")
+
+# Load ODSP policy directives from text file
+policy_file = os.path.join(os.path.dirname(__file__), "ODSP Policy Directives Summarized for Social Worker System Prompty.txt")
+with open(policy_file, "r") as f:
+    POLICY_DIRECTIVES = f.read()
+
+SYSTEM_PROMPT = f"""You are an Ontario Disability Support Program (ODSP) Information Agent, developed to assist both ODSP caseworkers and recipients with questions related to ODSP Income Support policy and process.
+
+YOUR PURPOSE:
+- Answer questions about ODSP eligibility, applications, asset limits, income treatment, basic needs calculations, shelter allowances, and related policy matters
+- Assist caseworkers in verifying policy and process requirements
+- Assist recipients or prospective applicants in understanding their rights and preliminary eligibility
+- Perform calculations (e.g. basic needs amounts, asset limits, shelter allowances) based strictly on the figures provided in the policy directives below
+
+YOUR RULES:
+- You may only answer questions based on the ODSP policy directives provided below. Do not draw on outside knowledge or make assumptions beyond what is documented.
+- If a question falls outside the scope of the policy directives provided, you must clearly state: "This question falls outside the scope of the policy information I have been provided. I recommend consulting the full ODSP Policy Directives at https://www.ontario.ca/document/ontario-disability-support-program-policy-directives-income-support or contacting your local ODSP office."
+- You do not make eligibility determinations. You provide policy information to support informed decision-making by the user.
+- You do not provide legal advice.
+- Cite sources inline, immediately after the specific policy point they support. Format citations as a markdown link like this: [(Directive 2.1)](https://url-here). Do not add a separate Sources section at the bottom.
+- If multiple directives apply, cite each one inline next to the relevant point.
+- Use formal, plain-language government communication style. Be clear, accurate, and concise.
+- Never invent, estimate, or extrapolate figures that are not explicitly stated in the policy directives below.
+
+CONVERSATION STYLE:
+- Mirror the user's communication style throughout the entire conversation — if they are casual and brief, stay casual and brief. Never shift into report mode mid-conversation.
+- Be conversational and natural at all times. You are having a dialogue, not delivering a report.
+- When a user's question is vague or their situation is unclear, ask one focused clarifying question before providing any policy information. Do not ask multiple questions at once.
+- Only provide policy detail once you understand exactly what the user needs. Do not info-dump.
+- If the user's question is specific and clear, answer it directly without asking clarifying questions.
+- Keep responses appropriately sized to the question — a simple question gets a simple answer, never a formatted report.
+- When a user asks a casual follow-up like "what does that mean?" or "who counts as a dependent?" respond conversationally in plain language first — only use bullet points or sections if the answer genuinely requires them.
+- When guiding a user through a multi-part topic like eligibility, work through it one section at a time. Ask questions about the first area, address their follow-ups fully, and only transition to the next area once the first topic is resolved.
+- Let the conversation breathe. Do not rush to cover everything — wait for the user to signal they are ready to move on.
+- Never end a response with a list of formatted sections if the user has been chatting casually. Match their energy.
+
+RESPONSE STYLE:
+- Begin with a direct answer to the question in full sentences. If there is a recommended action, include it in this opening paragraph — not at the end. No header, no bullets, no bold on this opening section.
+- Never end a response with a recommendation or suggested action. All recommendations belong in the opening paragraph.
+- Follow with short, clearly labelled sections containing only the critical policy information relevant to the question. Use bullet points within each section. Keep each bullet to one or two lines maximum.
+- Only include sections that are directly relevant to what was asked. Do not add extra context the user did not ask for.
+- Do not use checkmarks, arrows, or decorative symbols.
+- Do not add a Sources section at the end of responses.
+- Never pad responses with summaries or restatements of what was asked.
+
+TEMPLATE GENERATION:
+When the user asks for a template, form, or blank document, respond with ONLY the following format — no chat, no explanation:
+[TEMPLATE]
+&lt;html content of the template here&gt;
+[/TEMPLATE]
+
+The HTML inside [TEMPLATE] tags must be a complete, professional, printable document with:
+- A clear title and Ontario government-style header
+- Labeled fields with blank lines or boxes to fill in
+- Sections appropriate to the document type
+- Clean styling using inline CSS only (no external files)
+- Font: Arial, font-size 13px, line-height 1.6
+- Page padding of 40px
+- Field labels in bold, followed by a blank line
+- Do not include any chat text, buttons, or explanations inside the template HTML
+
+PDF OFFER:
+When your response contains a completed calculation, structured summary, or any output the user would likely want to save or print, add [ASK_PDF] on its own line at the very end of your response. Do not add [ASK_PDF] for general conversational replies.
+
+CONVERSATION END SIGNAL:
+Add [END_CONV] at the very end of your response when any of the following are true:
+- You have fully answered the question and there are no obvious follow-ups remaining
+- The user says something like "thanks", "got it", "that's all", "perfect", or any other closing statement
+- You have referred the user to their local ODSP office as a final step and the question is resolved
+- The conversation has reached a natural conclusion
+Do not add [END_CONV] mid-conversation or when the user is likely to have follow-up questions.
+
+---
+
+ODSP POLICY DIRECTIVES — REFERENCE DOCUMENT:
+
+{{POLICY_DIRECTIVES}}
+"""
+
+conversation_history = []
+
+@app.route("/")
+def index():
+    return render_template("index.html", policy_directives=POLICY_DIRECTIVES)
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    user_message = request.json.get("message", "").strip()
+    if not user_message:
+        return jsonify({"error": "Empty message"}), 400
+
+    conversation_history.append({"role": "user", "content": user_message})
+
+    response = client.messages.create(
+        model="claude-opus-4-6",
+        max_tokens=4096,
+        system=SYSTEM_PROMPT,
+        messages=conversation_history
+    )
+
+    reply = response.content[0].text
+    conversation_history.append({"role": "assistant", "content": reply})
+
+    return jsonify({"reply": reply})
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8080))
+    app.run(debug=False, host="0.0.0.0", port=port)</pre>
+            </div>
+        </div>
+
+        <!-- Eligibility Checker Tab -->
+        <div class="tab-content" id="tab-eligibility">
+            <div class="static-tab">
+                <h2>Eligibility Checker</h2>
+                <p style="margin-bottom:6px;"><strong>This is not an official determination. This is a proof of concept. Always verify with your local ODSP office.</strong></p>
+                <p style="margin-bottom:20px;color:#555;">Answer the questions below to receive a preliminary eligibility summary.</p>
+
+                <div class="card">
+                    <h3>Step 1 — Basic Information</h3>
+                    <div style="margin-bottom:12px;">
+                        <p style="margin-bottom:6px;">Are you 18 years of age or older?</p>
+                        <label><input type="radio" name="age" value="yes"> Yes</label> &nbsp;
+                        <label><input type="radio" name="age" value="no"> No</label>
+                    </div>
+                    <div>
+                        <p style="margin-bottom:6px;">Do you reside in Ontario?</p>
+                        <label><input type="radio" name="ontario" value="yes"> Yes</label> &nbsp;
+                        <label><input type="radio" name="ontario" value="no"> No</label>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Step 2 — Disability Status</h3>
+                    <div>
+                        <p style="margin-bottom:6px;">Have you been diagnosed with a substantial physical or mental impairment?</p>
+                        <label><input type="radio" name="disability" value="yes"> Yes</label> &nbsp;
+                        <label><input type="radio" name="disability" value="no"> No</label> &nbsp;
+                        <label><input type="radio" name="disability" value="unsure"> Not sure</label>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Step 3 — Financial Situation</h3>
+                    <div style="margin-bottom:12px;">
+                        <p style="margin-bottom:6px;">Do you currently receive Ontario Works (OW)?</p>
+                        <label><input type="radio" name="ow" value="yes"> Yes</label> &nbsp;
+                        <label><input type="radio" name="ow" value="no"> No</label>
+                    </div>
+                    <div>
+                        <p style="margin-bottom:6px;">Are your total assets below $40,000 (single) or $50,000 (couple)?</p>
+                        <label><input type="radio" name="assets" value="yes"> Yes</label> &nbsp;
+                        <label><input type="radio" name="assets" value="no"> No</label> &nbsp;
+                        <label><input type="radio" name="assets" value="unsure"> Not sure</label>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Step 4 — Living Situation</h3>
+                    <div style="margin-bottom:12px;">
+                        <p style="margin-bottom:6px;">Do you live with a spouse?</p>
+                        <label><input type="radio" name="spouse" value="yes"> Yes</label> &nbsp;
+                        <label><input type="radio" name="spouse" value="no"> No</label>
+                    </div>
+                    <div>
+                        <p style="margin-bottom:6px;">Do you live with parents who are on ODSP?</p>
+                        <label><input type="radio" name="parents" value="yes"> Yes</label> &nbsp;
+                        <label><input type="radio" name="parents" value="no"> No</label>
+                    </div>
+                </div>
+
+                <button onclick="checkEligibility()" style="width:100%;padding:14px;font-size:15px;font-weight:600;background:#00853F;color:white;border:none;border-radius:10px;cursor:pointer;margin-bottom:20px;">Check My Eligibility</button>
+
+                <div id="eligibility-result" style="display:none;" class="card">
+                    <h3>Your Preliminary Summary</h3>
+                    <div id="eligibility-output"></div>
+                </div>
+            </div>
+        </div>
+
+        </div><!-- end body-area -->
+    </div>
+
+    <script>
+        const MAX_MESSAGES = 20;
+        let userMessageCount = 0;
+
+        // Intro message
+        addMessage("Hello! I am an AI agent trained to assist you with any process-related questions regarding ODSP in Ontario. How can I help you?", "assistant", false);
+        const disclaimerEl = document.createElement("div");
+        disclaimerEl.style.cssText = "font-size:12px;color:#555;padding:4px 0 8px 46px;font-weight:bold;";
+        disclaimerEl.textContent = "Please note: this session is limited to " + MAX_MESSAGES + " messages.";
+        document.getElementById("chat").appendChild(disclaimerEl);
+
+        // Load saved notes
+        document.getElementById("notesText").value = localStorage.getItem("sw-notes") || "";
+
+        function saveNotes() {
+            localStorage.setItem("sw-notes", document.getElementById("notesText").value);
+            alert("Notes saved!");
+        }
+
+        function submitFeedback(positive, row) {
+            row.innerHTML = `<span style="font-size:13px;color:#555;">${positive ? "👍 Thank you for your feedback!" : "👎 Thank you — we'll work to improve."}</span>`;
+        }
+
+        function toggleCard(h3) {
+            h3.closest('.card').classList.toggle('collapsed');
+        }
+
+        function toggleNav() {
+            const nav = document.querySelector(".nav-bar");
+            const btn = document.getElementById("navToggle");
+            nav.classList.toggle("collapsed");
+            btn.innerHTML = nav.classList.contains("collapsed") ? "↪" : "↩";
+        }
+
+        function switchTab(name, el) {
+            document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+            document.querySelectorAll(".tab-content").forEach(t => t.classList.remove("active"));
+            el.classList.add("active");
+            document.getElementById("tab-" + name).classList.add("active");
+        }
+
+        function handleKey(e) {
+            if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        }
+
+        function shrinkBubble(msg) {
+            requestAnimationFrame(() => {
+                const hPad = 24;
+                let maxLineWidth = 0;
+                const walker = document.createTreeWalker(msg, NodeFilter.SHOW_TEXT);
+                let textNode;
+                while (textNode = walker.nextNode()) {
+                    const range = document.createRange();
+                    range.selectNodeContents(textNode);
+                    for (const rect of range.getClientRects()) {
+                        maxLineWidth = Math.max(maxLineWidth, rect.width);
+                    }
+                }
+                if (maxLineWidth > 0) {
+                    msg.style.width = Math.ceil(maxLineWidth + hPad) + 'px';
+                }
+            });
+        }
+
+        function addMessage(text, role, useMarkdown = true) {
+            const chat = document.getElementById("chat");
+
+            const row = document.createElement("div");
+            row.className = `message-row ${role}`;
+
+            const avatar = document.createElement("div");
+            avatar.className = "avatar";
+            avatar.textContent = role === "assistant" ? "🤖" : "🧑";
+
+            const msg = document.createElement("div");
+            msg.className = `message ${role}`;
+            if (role === 'assistant' && useMarkdown) {
+                msg.innerHTML = marked.parse(text);
+            } else {
+                msg.textContent = text;
+            }
+
+            row.appendChild(avatar);
+            row.appendChild(msg);
+            chat.appendChild(row);
+            if (role === 'assistant') shrinkBubble(msg);
+            chat.scrollTop = chat.scrollHeight;
+
+            return msg;
+        }
+
+        function showLimitReached() {
+            const chat = document.getElementById("chat");
+            const notice = document.createElement("div");
+            notice.style.cssText = "text-align:center;padding:16px;color:#666;font-size:13px;background:#f4f4f4;border-radius:8px;margin:12px 0;";
+            notice.textContent = "You've reached the session limit of " + MAX_MESSAGES + " messages. Please do not message this chat anymore. This is a concept for a school assignment and we are charged per message that is sent to the agent. Thank you for chatting!";
+            chat.appendChild(notice);
+            chat.scrollTop = chat.scrollHeight;
+            document.getElementById("input").disabled = true;
+            document.getElementById("sendBtn").disabled = true;
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById("input");
+            const btn = document.getElementById("sendBtn");
+            const message = input.value.trim();
+            if (!message) return;
+
+            if (userMessageCount >= MAX_MESSAGES) {
+                showLimitReached();
+                return;
+            }
+
+            userMessageCount++;
+            addMessage(message, "user");
+            input.value = "";
+            btn.disabled = true;
+
+            if (userMessageCount >= MAX_MESSAGES) {
+                showLimitReached();
+                return;
+            }
+
+            const typing = document.createElement("div");
+            typing.className = "typing";
+            typing.id = "typing";
+            typing.textContent = "Thinking...";
+            document.getElementById("chat").appendChild(typing);
+
+            const response = await fetch("/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ message })
+            });
+
+            document.getElementById("typing")?.remove();
+            const data = await response.json();
+            let reply = data.reply;
+            const templateMatch = reply.match(/\[TEMPLATE\]([\s\S]*?)\[\/TEMPLATE\]/);
+            const askPdf = reply.includes("[ASK_PDF]");
+            const endConv = reply.includes("[END_CONV]");
+            reply = reply.replace("[ASK_PDF]", "").replace("[END_CONV]", "").trim();
+
+            if (templateMatch) {
+                const templateHTML = templateMatch[1].trim();
+                const chat = document.getElementById("chat");
+                const noticeMsg = addMessage("Your template is ready.", "assistant", false);
+                const dlBtn = document.createElement("button");
+                dlBtn.textContent = "Download Template as PDF";
+                dlBtn.style.cssText = "margin-top:8px;padding:8px 16px;font-size:13px;background:#00853F;color:white;border:none;border-radius:6px;cursor:pointer;display:block;";
+                dlBtn.onclick = () => {
+                    const printWin = window.open('', '', 'width=850,height=700');
+                    printWin.document.write(templateHTML);
+                    printWin.document.close();
+                    printWin.print();
+                };
+                noticeMsg.appendChild(dlBtn);
+                chat.scrollTop = chat.scrollHeight;
+            } else {
+                const lastMsg = addMessage(reply, "assistant");
+                if (askPdf) {
+                    const askRow = document.createElement("div");
+                    askRow.style.cssText = "margin-top:6px;display:flex;gap:8px;align-items:center;padding-left:46px;";
+                    const askSpan = document.createElement("span");
+                    askSpan.style.cssText = "font-size:13px;color:#555;";
+                    askSpan.textContent = "Would you like to save this as a PDF?";
+                    const yesBtn = document.createElement("button");
+                    yesBtn.textContent = "Yes, export";
+                    yesBtn.style.cssText = "padding:5px 12px;font-size:12px;background:#00853F;color:white;border:none;border-radius:6px;cursor:pointer;";
+                    yesBtn.onclick = () => exportMsgAsPDF(yesBtn, lastMsg.innerHTML);
+                    const noBtn = document.createElement("button");
+                    noBtn.textContent = "No thanks";
+                    noBtn.style.cssText = "padding:5px 12px;font-size:12px;background:#ccc;color:#333;border:none;border-radius:6px;cursor:pointer;";
+                    noBtn.onclick = () => askRow.remove();
+                    askRow.appendChild(askSpan);
+                    askRow.appendChild(yesBtn);
+                    askRow.appendChild(noBtn);
+                    lastMsg.parentElement.parentElement.appendChild(askRow);
+                }
+            }
+
+            if (endConv) {
+                const feedbackRow = document.createElement("div");
+                feedbackRow.style.cssText = "display:flex;align-items:center;gap:10px;padding:10px 0 4px 46px;";
+                feedbackRow.innerHTML = `
+                    <span style="font-size:13px;color:#555;">Was this helpful?</span>
+                    <button onclick="submitFeedback(true, this.parentElement)" style="background:none;border:1px solid #ddd;border-radius:20px;padding:4px 12px;font-size:16px;cursor:pointer;color:#333;">👍</button>
+                    <button onclick="submitFeedback(false, this.parentElement)" style="background:none;border:1px solid #ddd;border-radius:20px;padding:4px 12px;font-size:16px;cursor:pointer;color:#333;">👎</button>
+                `;
+                document.getElementById("chat").appendChild(feedbackRow);
+                document.getElementById("chat").scrollTop = document.getElementById("chat").scrollHeight;
+            }
+
+            if (userMessageCount < MAX_MESSAGES) {
+                btn.disabled = false;
+                input.focus();
+            } else {
+                showLimitReached();
+            }
+        }
+
+        function exportMsgAsPDF(btn, html) {
+            const printWin = window.open('', '', 'width=800,height=600');
+            printWin.document.write(`<html><head><title>Export</title><style>body{font-family:sans-serif;padding:40px;font-size:14px;line-height:1.6;}h1,h2,h3{margin:12px 0 6px;}ul,ol{padding-left:20px;}hr{border:none;border-top:1px solid #ccc;margin:12px 0;}blockquote{border-left:3px solid #333;padding-left:10px;color:#555;}</style></head><body>${html}</body></html>`);
+            printWin.document.close();
+            printWin.print();
+            btn.parentElement.remove();
+        }
+
+        function checkEligibility() {
+            const get = (name) => {
+                const el = document.querySelector(`input[name="${name}"]:checked`);
+                return el ? el.value : null;
+            };
+
+            const age = get('age');
+            const ontario = get('ontario');
+            const disability = get('disability');
+            const ow = get('ow');
+            const assets = get('assets');
+            const spouse = get('spouse');
+            const parents = get('parents');
+
+            if (!age || !ontario || !disability || !ow || !assets || !spouse || !parents) {
+                alert('Please answer all questions before checking eligibility.');
+                return;
+            }
+
+            let output = '';
+
+            if (age === 'no') {
+                output = '<p><strong>You do not appear to meet the basic eligibility criteria for ODSP.</strong> Applicants must be 18 years of age or older.</p>';
+            } else if (ontario === 'no') {
+                output = '<p><strong>You must reside in Ontario to be eligible for ODSP.</strong> If you are planning to move to Ontario, contact your local ODSP office for guidance.</p>';
+            } else if (assets === 'no') {
+                output = '<p><strong>Your assets may exceed the ODSP limit.</strong> The prescribed asset limit is $40,000 for a single recipient or $50,000 for a couple. Some assets are exempt — ask the agent about exempt assets or contact your local ODSP office.</p>';
+            } else if (disability === 'no') {
+                output = `<p><strong>ODSP requires a substantial physical or mental impairment.</strong> If you are not sure whether your condition qualifies, speak with your doctor and contact your local ODSP office. You may also qualify for Ontario Works (OW) while your disability is being assessed.</p>`;
+            } else {
+                output += '<p><strong>Based on your answers, you may be eligible to apply for ODSP.</strong> Here is what to do next:</p><ul>';
+
+                if (ow === 'yes') {
+                    output += '<li>Since you are currently receiving Ontario Works, your application will be processed through the OW office. Ask your caseworker for a referral to the Disability Adjudication Unit (DAU) and a Disability Determination Package (DDP).</li>';
+                } else {
+                    output += '<li>Since you are not currently on Ontario Works, you may self-refer directly to your local ODSP office. You will need to complete an Application for Assistance (Part 1) and consent forms.</li>';
+                }
+
+                if (parents === 'yes') {
+                    output += '<li>Since you live with parents on ODSP, your eligibility as a dependent adult will also be assessed. Your financial independence status may affect your parents\' benefit unit.</li>';
+                }
+
+                if (spouse === 'yes') {
+                    output += '<li>Since you live with a spouse, you may apply as a couple. Your spouse\'s income and assets will be considered in the eligibility assessment.</li>';
+                }
+
+                output += '<li>You will need to complete a Disability Determination Package (DDP), which includes a Health Status Report and Activities of Daily Living Index completed by a qualified health professional.</li>';
+                output += '<li>Two mandatory third-party checks will be conducted: Canada Revenue Agency (CRA) and Equifax Canada.</li>';
+                output += '</ul>';
+                output += '<p style="margin-top:12px;color:#555;font-size:13px;">This is a preliminary summary only and does not constitute an eligibility determination. Contact your local ODSP office or use the Chat tab to ask further questions.</p>';
+            }
+
+            document.getElementById('eligibility-output').innerHTML = output;
+            document.getElementById('eligibility-result').style.display = 'block';
+            document.getElementById('eligibility-result').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

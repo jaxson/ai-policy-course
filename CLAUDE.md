@@ -38,4 +38,5 @@ There is no GitHub MCP connected. Draft the markdown here; Jaxson commits and pu
 
 Everything here is public and student-facing. It carries Jaxson's name and the Munk
 School's, so match the register of the existing README and syllabus: plain, specific, no
-promotional language. Never copy in client material from the private `ai-policy` repo.
+promotional language. This repo is public: keep private research and any client or
+consulting material out of it.

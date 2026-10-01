@@ -6,7 +6,7 @@
   node_bundler = "esbuild"
 
 [functions."brief"]
-  external_node_modules = ["@anthropic-ai/sdk"]
+  external_node_modules = ["@anthropic-ai/sdk", "@netlify/blobs"]
 
 [[headers]]
   for = "/*"

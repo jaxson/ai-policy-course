@@ -39,3 +39,19 @@ never in the repo and never reaches the browser. Keep every model call server-si
 
 When touching the model call, check the current model IDs rather than trusting whatever
 string is already in the file. See the `claude-api` skill.
+
+## Demo settings (2026-09-30)
+
+- Model `claude-sonnet-5-5`, thinking off (`between_tools`), low effort, 4,000 output tokens.
+- Search uses the basic `web_search_20250305` tool, capped at 3 searches and limited to
+  cbc.ca, theglobeandmail.com, betakit.com and thelogic.co. The dynamic-filtering
+  `web_search_20260209` tool failed intermittently with thinking off; do not switch back
+  without testing.
+- Limits: 3 briefings per visitor per day and 60 in total, counted in Netlify Blobs
+  (store `demo-usage`) under a hash of day plus IP; 3 per minute in memory. The page says
+  it is for demonstration purposes only.
+- The function streams a space every 5 seconds before the JSON body, because Netlify's
+  edge drops responses that send nothing for about 30 seconds.
+- Only text after the last search result is returned, so search narration never shows.
+- Deploy: `netlify deploy --prod --dir public --functions netlify/functions` from this
+  folder (linked to site `ai-brief-demo`). The site is not connected to a Git repo.

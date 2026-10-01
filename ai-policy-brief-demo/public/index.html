@@ -187,6 +187,7 @@
     }
 
     .error.active { display: block; }
+    .demo-note { margin-top: .5rem; font-size: .9rem; font-weight: 600; }
 
     .result {
       background: var(--surface);
@@ -311,6 +312,7 @@
       <div class="badge">Demo</div>
       <h1>AI Policy Briefing Agent</h1>
       <p>Scans Canadian news sources and generates a concise policy briefing using AI.</p>
+      <p class="demo-note">For demonstration purposes only. Limited to 3 briefings per visitor per day.</p>
     </header>
 
     <div class="input-section">
@@ -331,7 +333,7 @@
     <div class="status" id="status">
       <div class="spinner"></div>
       <div class="status-text">Searching Canadian news sources...</div>
-      <div class="status-sub">This takes 30-60 seconds. The agent is reading CBC, Globe and Mail, BetaKit, and The Logic.</div>
+      <div class="status-sub">This takes about 30 seconds. The agent is reading CBC, Globe and Mail, BetaKit, and The Logic.</div>
     </div>
 
     <div class="error" id="error"></div>
@@ -403,7 +405,7 @@
 
         const data = await res.json();
 
-        if (!res.ok) {
+        if (!res.ok || data.error) {
           throw new Error(data.error || 'Something went wrong.');
         }
 
@@ -441,6 +443,8 @@
 
     // Minimal markdown to HTML (no dependencies)
     function markdownToHtml(md) {
+      // Escape first so model output can never inject HTML.
+      md = md.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
       let html = md
         // Horizontal rules
         .replace(/^---$/gm, '<hr>')
@@ -451,7 +455,7 @@
         // Bold
         .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
         // Links
-        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+        .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
         // Unordered lists
         .replace(/^- (.+)$/gm, '<li>$1</li>')
         // Ordered lists

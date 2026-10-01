@@ -1,8 +1,9 @@
 {
   "name": "ai-policy-brief-demo",
   "version": "1.0.0",
-  "description": "AI Policy Briefing Agent — Public Demo",
+  "description": "AI Policy Briefing Agent \u2014 Public Demo",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.39.0"
+    "@anthropic-ai/sdk": "^0.129.0",
+    "@netlify/blobs": "^11.1.2"
   }
 }

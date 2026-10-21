@@ -253,11 +253,12 @@ The following books and ideas will be referenced throughout the course. They wil
 
 Copies should be available at the UofT Library and/or the UofT Bookstore.
 
-> **If you only read one of the books cover to cover, read *Co-Intelligence*.**
+> **If you only read one of the books cover to cover, read *Co-Intelligence* and its follow-up, *Co-Existence*.**
 
 | Book | Summaries | UofT Library | Amazon |
 |------|-----------|:---:|:---:|
 | *Co-Intelligence* (Ethan Mollick, 2024) | [Shortform](https://www.shortform.com/summary/co-intelligence-summary-ethan-mollick) / [Blinkist](https://www.blinkist.com/en/books/co-intelligence-en) | [UofT Library](https://librarysearch.library.utoronto.ca/nde/search?query=co-intelligence&tab=Everything&search_scope=UTL_AND_CI&searchInFulltext=false&vid=01UTORONTO_INST:UTORONTO_NDE&lang=en) | [Amazon.ca](https://www.amazon.ca/Co-Intelligence-Living-Working-Ethan-Mollick/dp/059371671X) |
+| [*Co-Existence: The Next Phase of AI*](https://co-existence.ai/) (Ethan Mollick, 2026) | Not yet available | [UofT Library](https://librarysearch.library.utoronto.ca/nde/search?query=co-existence%20mollick&tab=Everything&search_scope=UTL_AND_CI&searchInFulltext=false&vid=01UTORONTO_INST:UTORONTO_NDE&lang=en) | [Amazon.ca](https://www.amazon.ca/s?k=9798217181391) |
 | *The Alignment Problem* (Brian Christian, 2020) | [Shortform](https://www.shortform.com/summary/the-alignment-problem-summary-brian-christian) / [Blinkist](https://www.blinkist.com/en/books/the-alignment-problem-en) | [UofT Library](https://librarysearch.library.utoronto.ca/nde/search?query=the%20alignment%20problem&tab=Everything&search_scope=UTL_AND_CI&searchInFulltext=false&vid=01UTORONTO_INST:UTORONTO_NDE&lang=en) | [Amazon.ca](https://www.amazon.ca/Alignment-Problem-Machine-Learning-Values/dp/0393868338) |
 | *Empire of AI* (Karen Hao, 2025) | [Blinkist](https://www.blinkist.com/en/books/empire-of-ai-en) | [UofT Library](https://librarysearch.library.utoronto.ca/nde/search?query=empire%20of%20ai&tab=Everything&search_scope=UTL_AND_CI&searchInFulltext=false&vid=01UTORONTO_INST:UTORONTO_NDE&lang=en) | [Amazon.ca](https://www.amazon.ca/Empire-AI-Dreams-Nightmares-Altmans/dp/0593657500) |
 | *Power and Prediction* (Agrawal, Gans, Goldfarb, 2022) | [Shortform](https://www.shortform.com/summary/power-and-prediction-summary-ajay-agrawal-joshua-gans-and-avi-goldfarb) / [Blinkist](https://www.blinkist.com/en/books/power-and-prediction-en) | [UofT Library](https://librarysearch.library.utoronto.ca/nde/search?query=power%20and%20prediction&tab=Everything&search_scope=UTL_AND_CI&searchInFulltext=false&vid=01UTORONTO_INST:UTORONTO_NDE&lang=en) | [Amazon.ca](https://www.amazon.ca/Power-Prediction-Disruptive-Artificial-Intelligence/dp/1647824192) |
